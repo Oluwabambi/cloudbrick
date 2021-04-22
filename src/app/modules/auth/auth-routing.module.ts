@@ -8,9 +8,7 @@ const routesApp: Routes = [];
 @NgModule({
   declarations: [],
   imports: [
-    imports: [
+    CommonModule,
     RouterModule.forChild(routesApp)],
-    CommonModule
-  ]
 })
 export class AuthRoutingModule { }
