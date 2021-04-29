@@ -6,7 +6,6 @@ import {AuthRoutingModule} from './auth-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
 
-
 @NgModule({
   declarations: [
     AuthComponent,
@@ -14,7 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     CommonModule,
-    AuthRoutingModule, 
+    AuthRoutingModule,
     HttpClientModule,
   ]
 })
