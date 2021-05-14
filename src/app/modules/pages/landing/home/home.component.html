@@ -1,53 +1,66 @@
-<!-- NavBar -->
 <header>
-  <div>
-    <div>
-      <a routerLink="/home"><img src="./assets/logo.png"></a>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand active" routerLink="/home"><img src="./assets/logo.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" href="#navbarNavAltMarkup" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link " style="color:blue; font-weight: bolder;" aria-current="page" href="#">ABOUT US</a>
+          <a class="nav-link " style="color:blue; font-weight: bolder;" routerLink="/services">SERVICES</a>
+          <a class="nav-link " style="color:blue; font-weight: bolder;" routerLink="/contact-us">CONTACT US</a>
+
+        </div>
+      </div>
     </div>
-  </div>
-  <nav>
-    <ul>
-      <li class="nav-li"><a href="">ABOUT US</a></li>
-      <li class="nav-li"><a routerLink="/services" >SERVICES</a></li>
-      <li class="nav-lin"><a routerLink="/contact-us" >CONTACT US</a></li>
-    </ul>
   </nav>
 </header>
-<!-- SectionA -->
-<div id="section-a">
-  <div class="theme">
-    <h2>We Provide The Solutions You Need</h2>
-    <p>We have one mission at CloudBrick
-      to improve your company beyond your
-      wildest dreams in the shortest time
-      possible.
-    </p>
-    <button>
-      Get Started
-    </button>
-  </div><br>
-  <div class="theme-img">
-    <img src="./assets/keyb.jpg" width="50%">
+<div>
+  <div class="container" style="height:500px">
+    <div class="row">
+      <div class="col">
+        <h2>We Provide The Solutions You Need</h2>
+        <p>We have one mission at CloudBrick
+          to improve your company beyond your
+          wildest dreams in the shortest time
+          possible.
+        </p>
+        <button>
+          <a routerLink="/contact-us">Get started</a>
+        </button>
+      </div>
+      <div class="col" style="height:500px" >
+        <img src="./assets/keyb.jpg" >
+      </div>
+
+    </div>
   </div>
 </div>
-<!-- SectionB -->
-<div id="section-b">
-  <div class="mission-flex">
+<div>
+  <div class="container" style="background-color: blue; height: 400px;">
+    <div class="row">
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+      <div class="col">col</div>
+    </div>
+</div>
+<div>
+  <div class="container" >
+    <div class="row">
+      <div class="col">col</div>
+      <div class="col justify-content-center">
+        <ul>
+          <li>Mobile App Development</li>
+          <li>Web Application</li>
+          <li>Mobile Marketing</li>
+          <li>Internet/Web Marketing</li>
+        </ul>
+      </div>
+    </div>
 
-  </div>
-  <div class="mission-flex">
-
-  </div>
-  <div class="mission-flex">
-
-  </div>
-  <div class="mission-flex">
-
-  </div>
-  <div class="mission-flex">
-
-  </div>
-  <div class="mission-flex">
-
-  </div>
 </div>
