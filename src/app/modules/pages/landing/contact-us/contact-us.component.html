@@ -1,1 +1,90 @@
-<p>contact-us works!</p>
+<!-- NavBar -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand active" routerLink="/home"><img src="./assets/logo.jpg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" href="#navbarNavAltMarkup"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link " style="color:blue; font-weight: bolder;" aria-current="page" href="#">ABOUT
+                        US</a>
+                    <a class="nav-link " style="color:blue; font-weight: bolder;" routerLink="/services">SERVICES</a>
+                    <a class="nav-link " style="color:blue; font-weight: bolder;" routerLink="/contact-us">CONTACT
+                        US</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<h6 class="container-head">GET IN TOUCH WITH US</h6>
+
+<div>
+    <div class="container">
+        <div class="row contact-container">
+            <div class="col ">
+                <form class="form-container">
+                    <input type="text" class="form-control form-input" placeholder="Name" aria-label="Name">
+                    <input type="email" class="form-control form-input" placeholder="Email-Address"
+                        aria-label="Email-Address">
+                    <select class="form-select form-control form-input" aria-label="Default select example">
+                        <option value="Project Type">Project Type</option>
+                        <option value="Web Application">Web Application</option>
+                        <option value="Mobile Application">Mobile Application</option>
+                        <option value="Mobile Marketing">Mobile Marketing</option>
+                        <option value="Internet/Web Marketing">Internet/Web Marketing</option>
+                    </select>
+                    <select class="form-select form-control form-input" aria-label="Default select example">
+                        <option value="budget">Budget</option>
+                        <option value="10,000-30,000">10,000-30,000</option>
+                        <option value="40,000-60,000">40,000-60,000</option>
+                        <option value="60,000-100,000">60,000-100,000</option>
+                    </select>
+                    <input type="text" class="form-control form-input" placeholder="Send us a Message"
+                        style="height:60px;" aria-label="Message">
+                    <button type="submit" class="btn  form-button">Submit</button>
+                </form>
+            </div>
+            <div class="col visit-us-container">
+                <div class="visit-us">
+                    <h6>Visit Us At:</h6>
+                    <p>ASSBIFI House,
+                        4 ASSBIFI Road, Central Business District,
+                        Alausa, Ikeja.
+                        Lagos.</p>
+                    <h6>Contact Us at:</h6>
+                    <p>
+                        Telephone: +234 903 658 1855
+                    </p>
+                    <p>
+                        E-mail: info@cloudbrick.ng
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<footer>
+        <div class="row">
+            <div class="col">
+                1 of 3
+            </div>
+            <div class="col">
+                2 of 3
+            </div>
+            <div class="col footer-contact">
+                <h6>
+                    Contact Us
+                </h6>
+                <p>
+                    +234 903 658 1855<br>
+                    info@cloudbrick.ng
+                </p>
+            </div>
+        </div>
+</footer>   

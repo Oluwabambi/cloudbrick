@@ -1,4 +1,27 @@
-.navb{
-    width:100%;
-    height:2em;
-  }
+header img {
+  width: 120px;
+  height:120px;
+}
+.container p {
+  color:blue;
+  width:250px;
+  font-weight: bold;
+}
+.container button {
+  background-color:blue;
+  width: 7rem;
+  height:3rem;
+  border-color: white;
+  border-radius:10px;
+  border-style: none;
+  font-weight: bold;
+  
+}
+.container button a{
+  color:white;
+}
+.container img{
+  width:40rem;
+  height:490px;
+  
+}
