@@ -10,10 +10,15 @@ header img {
 }
 .services-list {
   width: 350px;
-  height: 40px;
+  height: 60px;
   background-color: rgb(241 238 238);
   margin-bottom: 25px;
   box-sizing: border-box;
+}
+.services-list p {
+  display: inline;
+  position: absolute;
+  left: 100px;
 }
 .describe-service-container{
   width:50%;
@@ -47,4 +52,18 @@ footer h6{
 }
 footer p{
   color:yellow;
+}
+.services-list img {
+  width: 30px;
+  height: 30px;
+}
+div h3 {
+  margin-top: 10px;
+  width: 35%;
+}
+.line {
+  margin-top: 10px;
+  background-color: blue;
+  width: 150px;
+  height: 2px;
 }
