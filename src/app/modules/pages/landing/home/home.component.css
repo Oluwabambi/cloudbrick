@@ -2,13 +2,11 @@ header img {
   width: 120px;
   height:120px;
 }
-.container p {
-  color:blue;
+.firstp {
   width:250px;
-  font-weight: bold;
+  font-weight: lighter;
 }
 .container button {
-  background-color:blue;
   width: 7rem;
   height:3rem;
   border-color: white;
@@ -23,5 +21,17 @@ header img {
 .container img{
   width:40rem;
   height:490px;
-  
+}
+.processes {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding-left: 0px;
+}
+.icons {
+  position: relative;
+  padding-left: 52px;
+  color: lightblue; 
+  font-size: 70px; 
+  max-width: 100%;
 }
