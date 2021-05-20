@@ -1,14 +1,18 @@
+<!-- NavBar -->
 <header>
   <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container-fluid">
-      <a class="navbar-brand active" routerLink="/home"><img src="./assets/logo.png"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" href="#navbarNavAltMarkup" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand active" routerLink="/home">
+        <img src="./assets/logob.jpeg">
+      </a>
+      <button (click)="isShown=!isShown" class="navbar-toggler navbar-btn" type="button" data-bs-toggle="collapse"
+        href="#navbarNavAltMarkup" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse justify-content-end " [ngClass]="{ 'show': isShown }" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link " style="color:blue; font-weight: bolder;" aria-current="page" href="#">ABOUT US</a>
+          <a class="nav-link " style="color:blue; font-weight: bolder;" href="#">ABOUT US</a>
           <a class="nav-link " style="color:blue; font-weight: bolder;" routerLink="/services">SERVICES</a>
           <a class="nav-link " style="color:blue; font-weight: bolder;" routerLink="/contact-us">CONTACT US</a>
 
@@ -17,11 +21,12 @@
     </div>
   </nav>
 </header>
+<!-- what we provide -->
 <div>
-  <div class="container" style="height:500px">
+  <div class="container">
     <div class="row">
-      <div class="col">
-        <h2>We Provide The Solutions You Need</h2>
+      <div class="col " @slideInLeft>
+        <h2 class="typewriter">We Provide The Solutions You Need</h2>
         <p>We have one mission at CloudBrick
           to improve your company beyond your
           wildest dreams in the shortest time
@@ -31,36 +36,98 @@
           <a routerLink="/contact-us">Get started</a>
         </button>
       </div>
-      <div class="col" style="height:500px" >
-        <img src="./assets/keyb.jpg" >
+      <div class="col ">
+        <img src="./assets/keyb.jpg">
       </div>
-
     </div>
   </div>
 </div>
 <div>
-  <div class="container" style="background-color: blue; height: 400px;">
+  <!-- Features -->
+  <div class="container" style="background-color:blue;margin-top: 10px; ">
     <div class="row">
-      <div class="col">col</div>
-      <div class="col">col</div>
-      <div class="col">col</div>
-      <div class="col">col</div>
-      <div class="col">col</div>
-      <div class="col">col</div>
-    </div>
-</div>
-<div>
-  <div class="container" >
-    <div class="row">
-      <div class="col">col</div>
-      <div class="col justify-content-center">
-        <ul>
-          <li>Mobile App Development</li>
-          <li>Web Application</li>
-          <li>Mobile Marketing</li>
-          <li>Internet/Web Marketing</li>
-        </ul>
+      <div class="col">
+        <div class="feature-box">
+          <div class="idea"><i class="material-icons icons" onmouseover="this.style.color='white'" onmouseout="this.style.color='lightblue'">lightbulb</i></div>
+          <h4>Idea</h4>
+          <div class="ideastory">In web and mobile application design,
+            we design great user interface, or UI design,
+            this helps the user to accomplish
+            a given task as simply and efficiently as possible.
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="feature-box">
+          <div class="idea"></div>
+          <h4>Idea</h4>
+          <div class="ideastory">In web and mobile application design,
+            we design great user interface, or UI design,
+            this helps the user to accomplish
+            a given task as simply and efficiently as possible.
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="feature-box">
+          <div class="idea"></div>
+          <h4>Idea</h4>
+          <div class="ideastory">In web and mobile application design,
+            we design great user interface, or UI design,
+            this helps the user to accomplish
+            a given task as simply and efficiently as possible.
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="feature-box">
+          <div class="idea"></div>
+          <h4>Idea</h4>
+          <div class="ideastory">In web and mobile application design,
+            we design great user interface, or UI design,
+            this helps the user to accomplish
+            a given task as simply and efficiently as possible.
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="feature-box">
+          <div class="idea"></div>
+          <h4>Idea</h4>
+          <div class="ideastory">In web and mobile application design,
+            we design great user interface, or UI design,
+            this helps the user to accomplish
+            a given task as simply and efficiently as possible.
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="feature-box">
+          <div class="idea"></div>
+          <h4>Idea</h4>
+          <div class="ideastory">In web and mobile application design,
+            we design great user interface, or UI design,
+            this helps the user to accomplish
+            a given task as simply and efficiently as possible.
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  <div>
+    <!-- About us -->
+    <div class="container">
+      <div class="row" id="about-us">
+        <div class="col">col</div>
+        <div class="col justify-content-center">
+          <h5>ABOUT US</h5>
+          <ul>
+            <li>Mobile App Development</li>
+            <li>Web Application</li>
+            <li>Mobile Marketing</li>
+            <li>Internet/Web Marketing</li>
+          </ul>
+        </div>
+      </div>
 
-</div>
+    </div>

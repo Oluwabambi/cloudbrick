@@ -2,18 +2,18 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
-            <a class="navbar-brand active" routerLink="/home"><img src="./assets/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" href="#navbarNavAltMarkup"
+            <a class="navbar-brand " routerLink="/home"><img src="./assets/logob.jpeg"></a>
+            <button class="navbar-toggler navbar-btn" (click)="isShown=!isShown" type="button" data-bs-toggle="collapse" href="#navbarNavAltMarkup"
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse justify-content-end" [ngClass]="{'show' : isShown}" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link " style="color:blue; font-weight: bolder;" aria-current="page" href="#">ABOUT
                         US</a>
                     <a class="nav-link " style="color:blue; font-weight: bolder;" routerLink="/services">SERVICES</a>
-                    <a class="nav-link " style="color:blue; font-weight: bolder;" routerLink="/contact-us">CONTACT
+                    <a class="nav-link active " style="color:blue; font-weight: bolder;" routerLink="/contact-us">CONTACT
                         US</a>
 
                 </div>
@@ -26,8 +26,8 @@
 
 <div>
     <div class="container">
-        <div class="row contact-container">
-            <div class="col ">
+        <div class="row order-2">
+            <div class="col contact-container ">
                 <form class="form-container">
                     <input type="text" class="form-control form-input" placeholder="Name" aria-label="Name">
                     <input type="email" class="form-control form-input" placeholder="Email-Address"
