@@ -1,79 +1,77 @@
 <!-- NavBar -->
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container-fluid">
-            <a class="navbar-brand active" routerLink="/home"><img src="./assets/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" href="#navbarNavAltMarkup"
-                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link " style="color:blue; font-weight: bolder;" aria-current="page" href="#">ABOUT
-                        US</a>
-                    <a class="nav-link " style="color:blue; font-weight: bolder;" routerLink="/services">SERVICES</a>
-                    <a class="nav-link " style="color:blue; font-weight: bolder;" routerLink="/contact-us">CONTACT
-                        US</a>
-  
-                </div>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+          <a class="navbar-brand" routerLink="/home"><img src="./assets/logob.jpeg"></a>
+          <button class="navbar-toggler navbar-btn" (click)="isShown=!isShown" type="button" data-bs-toggle="collapse" href="#navbarNavAltMarkup"
+              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" [ngClass]="{show: isShown}" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                  <a class="nav-link " style="color:blue; font-weight: bolder;" aria-current="page" href="#">ABOUT
+                      US</a>
+                  <a class="nav-link active" style="color:blue; font-weight: bolder;" routerLink="/services">SERVICES</a>
+                  <a class="nav-link " style="color:blue; font-weight: bolder;" routerLink="/contact-us">CONTACT
+                      US</a>
+
+              </div>
+          </div>
+      </div>
+  </nav>
+</header>
+<div class="container">
+    <div class="line"></div>
+    <div>
+        <h3>At CloudBrick, we bring solutions to you.</h3>
+    </div>
+    <div class="row services-container">
+        <div class="col services">
+            <div class="col pt-3 services-list" (click)="changeText()">
+                <img class="rounded float-start" src="./assets/web dev.png" alt="Web Dev">
+                <p>Website Development</p>
+            </div>
+            <div class="col pt-3 services-list" (click)="changeText1()" >
+                <img class="rounded float-start" src="./assets/mobile dev.png" alt="Web Dev">
+                <p>Mobile App Development</p>
+            </div>
+            <div class="col pt-3 services-list" (click)="changeText2()">
+                <img class="rounded float-start" src="./assets/content.png" alt="Web Dev">
+                <p>Content Acquisition</p>
+            </div>
+            <div class="col pt-3 services-list" (click)="changeText3()">
+                <img class="rounded float-start" src="./assets/mobile mark.png" alt="Web Dev">
+                <p>Mobile Marketing</p>
+            </div>
+            <div class="col pt-3 services-list" (click)="changeText4()">
+                <img class="rounded float-start" src="./assets/Internet mark.png" alt="Web Dev">
+                <p>Internet/Web Marketing</p>
             </div>
         </div>
-    </nav>
-  </header>
-  <div>
-    <div class="container">
-        <div class="line"></div>
-        <div>
-            <h3>At CloudBrick, we bring solutions to you.</h3>
-        </div>
-        <div class="row services-container">
-            <div class="col services">
-                <div class="col pt-3 services-list">
-                    <img class="rounded float-start" src="./assets/web dev.png" alt="Web Dev">
-                    <p>Website Development</p>
+        <div class="col describe-service-container">
+            <div class="describe-service">
+                <p class="pt-5 px-3 text-center" >{{myText}}</p>
                 </div>
-                <div class="col pt-3 services-list">
-                    <img class="rounded float-start" src="./assets/mobile dev.png" alt="Web Dev">
-                    <p>Mobile App Development</p>
-                </div>
-                <div class="col pt-3 services-list">
-                    <img class="rounded float-start" src="./assets/content.png" alt="Web Dev">
-                    <p>Content Acquisition</p>
-                </div>
-                <div class="col pt-3 services-list">
-                    <img class="rounded float-start" src="./assets/mobile mark.png" alt="Web Dev">
-                    <p>Mobile Marketing</p>
-                </div>
-                <div class="col pt-3 services-list">
-                    <img class="rounded float-start" src="./assets/Internet mark.png" alt="Web Dev">
-                    <p>Internet/Web Marketing</p>
-                </div>
-            </div>
-            <div class="col describe-service-container">
-                <div class="describe-service">
-                    <p class="pt-5 px-3 text-center">With us, you get a professionally designed website that can be customized according to your requirements. 
-                        We ensure that your website puts you on top of your competitors.</p>
-                </div>
-            </div>
         </div>
     </div>
-    <footer>
-        <div class="row">
-            <div class="col">
-                1 of 3
-            </div>
-            <div class="col">
-                2 of 3
-            </div>
-            <div class="col footer-contact">
-                <h6>
-                    Contact Us
-                </h6>
-                <p>
-                    +234 903 658 1855<br>
-                    info@cloudbrick.ng
-                </p>
-            </div>
+</div>
+<footer>
+    <div class="row">
+        <div class="col">
+            1 of 3
         </div>
+        <div class="col">
+            2 of 3
+        </div>
+        <div class="col footer-contact">
+            <h6>
+                Contact Us
+            </h6>
+            <p>
+                +234 903 658 1855<br>
+                info@cloudbrick.ng
+            </p>
+        </div>
+    </div>
 </footer>   
