@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import {HomeComponent} from './home/home.component';
-import {LandingComponent} from './landing.component';
-import {ServicesComponent} from './services/services.component';
-import {ContactUsComponent} from './contact-us/contact-us.component';
+import { LandingComponent } from './landing.component';
+import { HomeComponent } from './home/home.component';
+import { ServicesComponent } from './services/services.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const routes: Routes = [{
-  path: '',
+  path:'',
   component: LandingComponent,
   children: [
     {path: 'home', component: HomeComponent},
     {path: 'services', component: ServicesComponent},
-    {path: 'contact-us', component: ContactUsComponent},
+    {path: 'contact-us', component: ContactUsComponent}
   ]
-
 }];
 
 @NgModule({

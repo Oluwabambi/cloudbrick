@@ -1,5 +1,5 @@
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 const routesApp: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -17,5 +17,4 @@ const routesApp: Routes = [
   imports: [RouterModule.forRoot(routesApp)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {
-}
+export class AppRoutingModule { }

@@ -41,6 +41,7 @@ header img {
   width:17rem;
   
 }
+
 .form-button{
   border-style: none;
   border-radius: 200px;
@@ -65,8 +66,19 @@ position:absolute;
 top:5px;
 left:100px;
 }
+.visit-us h6 {
+  margin-top: 5px;
+  margin-left: 5px;
+}
 .visit-us p{
+  padding-left: 10px;
   color:blue;
+}
+.line {
+  margin-top: 10px;
+  background-color: blue;
+  width: 150px;
+  height: 2px;
 }
 /* @media (max-width:1200px){
   .row{
