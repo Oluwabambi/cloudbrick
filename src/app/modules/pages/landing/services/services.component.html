@@ -1,26 +1,27 @@
 <!-- NavBar -->
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light ">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light ">
       <div class="container-fluid">
-          <a class="navbar-brand" routerLink="/home"><img src="./assets/logob.jpeg"></a>
-          <button class="navbar-toggler navbar-btn" (click)="isShown=!isShown" type="button" data-bs-toggle="collapse" href="#navbarNavAltMarkup"
-              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" [ngClass]="{show: isShown}" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                  <a class="nav-link " style="color:blue; font-weight: bolder;" aria-current="page" href="#">ABOUT
-                      US</a>
-                  <a class="nav-link active" style="color:blue; font-weight: bolder;" routerLink="/services">SERVICES</a>
-                  <a class="nav-link " style="color:blue; font-weight: bolder;" routerLink="/contact-us">CONTACT
-                      US</a>
-
-              </div>
+        <a class="navbar-brand active" routerLink="/home">
+          <img src="./assets/cloudbrick.png">
+        </a>
+        <button (click)="isShown=!isShown" class="navbar-toggler navbar-btn" type="button" data-bs-toggle="collapse"
+          href="#navbarNavAltMarkup" data-bs-targetg="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end " [ngClass]="{ 'show': isShown }"
+          id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" style="padding-right:40px; font-weight: bolder;" aria-current="page" onmouseover="this.style.cursor='pointer'" >ABOUT US</a>
+            <a class="nav-link" style="padding-right:40px; font-weight: bolder;" routerLink="/services">SERVICES</a>
+            <a class="nav-link" style="font-weight: bolder;" routerLink="/contact-us">CONTACT US</a>
+  
           </div>
+        </div>
       </div>
-  </nav>
-</header>
+    </nav>
+  </header>
 <div class="container">
     <div class="line"></div>
     <div>
@@ -28,23 +29,23 @@
     </div>
     <div class="row services-container">
         <div class="col services">
-            <div class="col pt-3 services-list" (click)="changeText()">
+            <div class="col pt-3 services-list" (click)="generalChangeText('WEB')">
                 <img class="rounded float-start" src="./assets/web dev.png" alt="Web Dev">
                 <p>Website Development</p>
             </div>
-            <div class="col pt-3 services-list" (click)="changeText1()" >
+            <div class="col pt-3 services-list" (click)="generalChangeText('MOBILE')" >
                 <img class="rounded float-start" src="./assets/mobile dev.png" alt="Web Dev">
                 <p>Mobile App Development</p>
             </div>
-            <div class="col pt-3 services-list" (click)="changeText2()">
+            <div class="col pt-3 services-list" (click)="generalChangeText('CONTENT')">
                 <img class="rounded float-start" src="./assets/content.png" alt="Web Dev">
                 <p>Content Acquisition</p>
             </div>
-            <div class="col pt-3 services-list" (click)="changeText3()">
+            <div class="col pt-3 services-list" (click)="generalChangeText('MOBMARK')">
                 <img class="rounded float-start" src="./assets/mobile mark.png" alt="Web Dev">
                 <p>Mobile Marketing</p>
             </div>
-            <div class="col pt-3 services-list" (click)="changeText4()">
+            <div class="col pt-3 services-list" (click)="generalChangeText('INTERNET')">
                 <img class="rounded float-start" src="./assets/Internet mark.png" alt="Web Dev">
                 <p>Internet/Web Marketing</p>
             </div>

@@ -1,20 +1,21 @@
 <!-- NavBar -->
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light ">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light ">
     <div class="container-fluid">
       <a class="navbar-brand active" routerLink="/home">
-        <img src="./assets/logob.jpeg">
+        <img src="./assets/cloudbrick.png">
       </a>
       <button (click)="isShown=!isShown" class="navbar-toggler navbar-btn" type="button" data-bs-toggle="collapse"
-        href="#navbarNavAltMarkup" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+        href="#navbarNavAltMarkup" data-bs-targetg="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end " [ngClass]="{ 'show': isShown }" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse justify-content-end " [ngClass]="{ 'show': isShown }"
+        id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link " style="color:blue; font-weight: bolder;" href="#">ABOUT US</a>
-          <a class="nav-link " style="color:blue; font-weight: bolder;" routerLink="/services">SERVICES</a>
-          <a class="nav-link " style="color:blue; font-weight: bolder;" routerLink="/contact-us">CONTACT US</a>
+          <a class="nav-link nav-about " (click)='showUp()' style="padding-right:40px; font-weight: bolder;" aria-current="page" onmouseover="this.style.cursor='pointer'" >ABOUT US</a>
+          <a class="nav-link" style="padding-right:40px; font-weight: bolder;" routerLink="/services">SERVICES</a>
+          <a class="nav-link" style="font-weight: bolder;" routerLink="/contact-us">CONTACT US</a>
 
         </div>
       </div>
@@ -22,112 +23,109 @@
   </nav>
 </header>
 <!-- what we provide -->
-<div>
-  <div class="container">
-    <div class="row">
-      <div class="col " @slideInLeft>
-        <h2 class="typewriter">We Provide The Solutions You Need</h2>
-        <p>We have one mission at CloudBrick
-          to improve your company beyond your
-          wildest dreams in the shortest time
-          possible.
-        </p>
-        <button>
-          <a routerLink="/contact-us">Get started</a>
-        </button>
-      </div>
-      <div class="col ">
-        <img src="./assets/keyb.jpg">
-      </div>
+<div class="container" style="box-sizing: border-box;">
+  <div style="box-sizing: border-box;" class="row idea">
+    <div class="col " @slideInLeft>
+      <h2 class="typewriter">Evolve Your Business With CloudBrick</h2>
+      <p class="firstp">Using a secure and cost-effective means, CloudBrick aims at providing your business with the
+        best tech solutions to get your projects up and running </p>
+      <button style="box-sizing: border-box;">
+        <a routerLink="/contact-us">Get Started</a>
+      </button>
+    </div>
+    <div class="col image">
+      <img src="./assets/Landing.svg">
     </div>
   </div>
 </div>
-<div>
-  <!-- Features -->
-  <div class="container" style="background-color:blue;margin-top: 10px; ">
-    <div class="row">
-      <div class="col">
-        <div class="feature-box">
-          <div class="idea"><i class="material-icons icons" onmouseover="this.style.color='white'" onmouseout="this.style.color='lightblue'">lightbulb</i></div>
-          <h4>Idea</h4>
-          <div class="ideastory">In web and mobile application design,
-            we design great user interface, or UI design,
-            this helps the user to accomplish
-            a given task as simply and efficiently as possible.
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="feature-box">
-          <div class="idea"></div>
-          <h4>Idea</h4>
-          <div class="ideastory">In web and mobile application design,
-            we design great user interface, or UI design,
-            this helps the user to accomplish
-            a given task as simply and efficiently as possible.
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="feature-box">
-          <div class="idea"></div>
-          <h4>Idea</h4>
-          <div class="ideastory">In web and mobile application design,
-            we design great user interface, or UI design,
-            this helps the user to accomplish
-            a given task as simply and efficiently as possible.
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="feature-box">
-          <div class="idea"></div>
-          <h4>Idea</h4>
-          <div class="ideastory">In web and mobile application design,
-            we design great user interface, or UI design,
-            this helps the user to accomplish
-            a given task as simply and efficiently as possible.
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="feature-box">
-          <div class="idea"></div>
-          <h4>Idea</h4>
-          <div class="ideastory">In web and mobile application design,
-            we design great user interface, or UI design,
-            this helps the user to accomplish
-            a given task as simply and efficiently as possible.
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="feature-box">
-          <div class="idea"></div>
-          <h4>Idea</h4>
-          <div class="ideastory">In web and mobile application design,
-            we design great user interface, or UI design,
-            this helps the user to accomplish
-            a given task as simply and efficiently as possible.
-          </div>
-        </div>
-      </div>
+<!-- <div class="container-fluid"> -->
+  <div style="background-color:#4285f4; margin-top: 10em; box-sizing: border-box;">
+    <div>
+      <h3>CLOUDBRICK LIMITED - SOLUTIONS MADE EASY</h3>
+    </div>
+  <div style="background-color:#4285f4;" class="row idea h-100">
+    <div class="col-sm-five">
+      <i class="material-icons icons" onmouseover="this.style.color='white'"
+        onmouseout="this.style.color='lightblue'">lightbulb</i>
+      <h5 class="text-center text-white">Idea</h5>
+      <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
+        the shortest time possible</p>
+    </div>
+    <div class="col-sm-five">
+      <i class="material-icons icons" onmouseover="this.style.color='white'"
+        onmouseout="this.style.color='lightblue'">grid_view</i>
+      <h5 class="text-center text-white">Design</h5>
+      <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
+        the shortest time possible.</p>
+    </div>
+    <div class="col-sm-five">
+      <i class="material-icons icons" onmouseover="this.style.color='white'"
+        onmouseout="this.style.color='lightblue'">developer_mode</i>
+      <h5 class="text-center text-white">Development</h5>
+      <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
+        the shortest time possible.</p>
+    </div>
+    <div class="col-sm-five">
+      <i class="material-icons icons" onmouseover="this.style.color='white'"
+        onmouseout="this.style.color='lightblue'">offline_bolt</i>
+      <h5 class="text-center text-white">Testing</h5>
+      <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
+        the shortest time possible.</p>
+    </div>
+    <div class="col-sm-five">
+      <i class="material-icons icons" onmouseover="this.style.color='white'"
+        onmouseout="this.style.color='lightblue'">timeline</i>
+      <h5 class="text-center text-white">Deployment</h5>
+      <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
+        the shortest time possible.</p>
     </div>
   </div>
-  <div>
-    <!-- About us -->
-    <div class="container">
-      <div class="row" id="about-us">
-        <div class="col">col</div>
-        <div class="col justify-content-center">
-          <h5>ABOUT US</h5>
-          <ul>
-            <li>Mobile App Development</li>
-            <li>Web Application</li>
-            <li>Mobile Marketing</li>
-            <li>Internet/Web Marketing</li>
+</div>  
+<div>
+          <div class="container">
+            <div class="row idea">
+              <div class="col">
+                <img style="max-width:100%" src="./assets/whatwedo.jpeg" alt="whatwedo">
+              </div>
+              <div class="col justify-content-center">
+                <h4 style="font-family: 'KoHo', sans-serif; margin-left: 90px; margin-top:100px">WHAT WE DO</h4>
+          <ul style="margin-left: 90px; margin-top: 20px;">
+            <li><span (click) = "toggleContent('MOBILE')">Mobile App Development</span></li>
+            <div *ngIf ="showContent[0]">
+            <p class="details" >kdkldkj</p>
+          </div>
+            <li (click) = "toggleContent('WEB')">Web Application</li>
+            <div *ngIf ="showContent[1]">
+              <p class="details" >kdkldkj</p>
+            </div>
+            <li (click) = "toggleContent('MOBMARK')">Mobile Marketing</li>
+            <div *ngIf ="showContent[2]">
+              <p class="details" >kdkldkj</p>
+            </div>
+            <li (click) = "toggleContent('INTERNET')">Internet/Web Marketing</li>
+            <div *ngIf ="showContent[3]">
+              <p class="details" >kdkldkj</p>
+            </div>
           </ul>
         </div>
       </div>
-
     </div>
+    <div>
+      <!-- About us -->
+      <div class="row idea" id="about">
+        <div class="col justify-content-center">
+          <h5 style="font-family: 'KoHo', sans-serif; margin-left: 90px; margin-bottom:10px; margin-top:50px">GET TO
+            KNOW US</h5>
+          <p style="margin-left: 30px;">CloudBrick is a Mobile and Web Application Development and Digital Marketing
+            Management that is also a new media provider offering an array of next-generation mobile solutions based on
+            innovative technologies</p>
+        </div>
+        <div class="col">
+          <img style="max-width:100%" src="./assets/Team building.svg" alt="">
+        </div>
+      </div>
+
+      </div>
+      <footer>
+        <p>Our footer to be continued...</p>
+      </footer>

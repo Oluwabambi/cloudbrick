@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-contact-us',
@@ -9,10 +10,20 @@ export class ContactUsComponent implements OnInit {
  
   // for navbar collapse
   isShown=false;
-  
-  constructor() { }
 
-  ngOnInit(): void {
+
+  
+  constructor(private router: Router) { 
+    
   }
 
+  ngOnInit(): void {
+    
+  }
+  
+goToAbout(){
+  return this.router.navigate(['/home'], 
+  {state: {comingFrom: 'contact-us'}})
+    
+}
 }

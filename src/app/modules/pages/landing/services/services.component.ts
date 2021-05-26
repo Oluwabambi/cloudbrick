@@ -6,29 +6,39 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./services.component.css']
 })
 export class ServicesComponent implements OnInit {
-  myText: string =`With us, you get a professionally
+  myText: string = `With us, you get a professionally
   designed website that can be customized according to your requirements. 
  We ensure that your website puts you on top of your competitors.`
-;
+    ;
   // for navbar collapse
-  isShown=false;
+  isShown = false;
 
   constructor() { }
-  changeText(){
-    this.myText=`this the web`;
+  generalChangeText(type: string) {
+    switch (type) {
+      case 'WEB':
+        this.myText = `this the web`;
+        break;
+        case 'MOBILE':
+          this.myText=`this the mobile`;
+        break;
+        case 'CONTENT':
+          this.myText=`this the content`;
+        break;
+        case 'MOBMARK':
+          this.myText=`this the mobile marketing`;
+        break;
+        case 'INTERNET':
+          this.myText=`this the internet`;
+        break;
+        default:
+          this.myText=`With us, you get a professionally
+          designed website that can be customized according to your requirements. 
+         We ensure that your website puts you on top of your competitors.`
+            
+    }
   }
-  changeText1(){
-    this.myText=`this the mobile`;
-  }
-  changeText2(){
-    this.myText=`this the content`;
-  }
-  changeText3(){
-    this.myText=`this the mobile marketing`;
-  }
-  changeText4(){
-    this.myText=`this the internet`;
-  }
+  
 
   ngOnInit(): void {
   }

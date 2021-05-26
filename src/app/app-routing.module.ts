@@ -1,5 +1,6 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 const routesApp: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -14,7 +15,7 @@ const routesApp: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routesApp)],
+  imports: [RouterModule.forRoot(routesApp),NgbModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
