@@ -4,6 +4,10 @@ header, body{
   padding-top: 3rem; */
   font-family: 'KoHo', sans-serif;
 }
+.rows{
+  margin-right: 15px;
+  margin-left: 15px;
+}
 /* NavBar */
 header img {
   margin-left: 70px ;
@@ -21,8 +25,9 @@ navbar-nav a {
 .services-container{
   margin-top: 50px;
   width: 100%;
-  
+  margin-bottom: 40px;
   position:relative;
+  font-family: 'Quicksand', sans-serif;
 }
 .services-list {
   width: 350px;
@@ -35,7 +40,7 @@ navbar-nav a {
 .services-list:hover {
   width: 350px;
   height: 90px;
-  background-color: rgb(67, 67, 241);
+  background-color: #4285f4;
   box-sizing: border-box;
   border-radius:20px;
 }
@@ -44,39 +49,43 @@ navbar-nav a {
   position: absolute;
   left: 100px;
 }
-.describe-service-container{
-  width:50%;
-  box-sizing: border-box;
-  position: relative;
-
-}
 .describe-service{
+box-sizing: border-box;
 background-color: rgb(241 238 238);
 width:300px;
 height:300px;
-position:absolute;
+border: 2px solid #4285f4;
+border-radius: 20px;
+/* position:absolute;
 top:5px;
-left:200px;
+left:200px; */
 }
 .visit-us p{
   padding-left: 10px;
   color:blue;
 }
 /* footer */
-footer{
+.foot {
   background-color: #4285f4;
-  width:100%;
-  height:250px;
+  margin-right: 0px;
+  color: white;
+  padding-bottom: 30px;
 }
-.footer-contact{
-  margin:40px 40px 40px;
+footer img {
+  width: 90px;
+  height: 90px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
-
-footer h6{
-  color:white;
+.footr{
+  /* align-items: center; */
+  padding-top: 20px;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
 }
-footer p{
-  color:yellow;
+.footr-p{
+  padding-left: 20px;
+  padding-top: 20px;
 }
 .services-list img {
   width: 30px;

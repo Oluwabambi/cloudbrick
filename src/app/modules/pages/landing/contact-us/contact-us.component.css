@@ -4,6 +4,10 @@ header, body{
   padding-top: 3rem; */
   font-family: 'KoHo', sans-serif;
 }
+.rows{
+  margin-right: 15px;
+  margin-left: 15px;
+}
 /* NavBar */
 header img {
   margin-left: 70px ;
@@ -24,6 +28,11 @@ navbar-nav a {
     padding-bottom:20px;
     
   }
+.contact {
+  max-width: 400px;
+  background-color: #4285f4;
+  font-family: 'Quicksand', sans-serif;
+}
 .contact-container{
   width: 50%;
   height:500px;
@@ -49,10 +58,23 @@ navbar-nav a {
   border-style: none;
   border-radius: 200px;
   background-color: yellow;
-  width:8rem;
-  color:blue;
-  margin-top: 10px;
-  margin-left: 100px;
+  width:100%;
+  color:#4285f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  /* margin-top: 10px; */
+  /* margin-left: 100px; */
+}
+
+.visit {
+  margin:auto;
+  max-width: 350px;
+  background-color: rgb(241 238 238);
+}
+.visit p {
+  font-family: 'Quicksand', sans-serif;
 }
 .visit-us-container{
   width:50%;
@@ -80,7 +102,7 @@ left:100px;
 .line {
   margin-top: 10px;
   margin-left: 120px;
-  background-color: #8cc2fb;
+  background-color: #4285f4;
   width: 150px;
   height: 2px;
 }
@@ -89,19 +111,26 @@ left:100px;
     flex-direction:column;
   }
 } */
-/* footer */
-footer{
-  background-color: #4285f4;
-  width:100%;
-  height:250px;
-}
-.footer-contact{
-  margin:40px 40px 40px;
-}
 
-footer h6{
-  color:white;
+/* footer */
+.foot {
+  background-color: #4285f4;
+  margin-right: 0px;
+  color: white;
+  padding-bottom: 30px;
 }
-footer p{
-  color:yellow;
+footer img {
+  width: 90px;
+  height: 90px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.footr{
+  padding-top: 20px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+.footr-p{
+  padding-left: 20px;
+  padding-top: 20px;
 }

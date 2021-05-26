@@ -29,50 +29,48 @@
     </div>
     <div class="row services-container">
         <div class="col services">
-            <div class="col pt-3 services-list" (click)="changeText()">
+            <div class="col pt-3 services-list" (click)="generalChangeText('WEB')">
                 <img class="rounded float-start" src="./assets/web dev.png" alt="Web Dev">
                 <p>Website Development</p>
             </div>
-            <div class="col pt-3 services-list" (click)="changeText1()" >
+            <div class="col pt-3 services-list" (click)="generalChangeText('MOBILE')" >
                 <img class="rounded float-start" src="./assets/mobile dev.png" alt="Web Dev">
                 <p>Mobile App Development</p>
             </div>
-            <div class="col pt-3 services-list" (click)="changeText2()">
+            <div class="col pt-3 services-list" (click)="generalChangeText('CONTENT')">
                 <img class="rounded float-start" src="./assets/content.png" alt="Web Dev">
                 <p>Content Acquisition</p>
             </div>
-            <div class="col pt-3 services-list" (click)="changeText3()">
+            <div class="col pt-3 services-list" (click)="generalChangeText('MOBMARK')">
                 <img class="rounded float-start" src="./assets/mobile mark.png" alt="Web Dev">
                 <p>Mobile Marketing</p>
             </div>
-            <div class="col pt-3 services-list" (click)="changeText4()">
+            <div class="col pt-3 services-list" (click)="generalChangeText('INTERNET')">
                 <img class="rounded float-start" src="./assets/Internet mark.png" alt="Web Dev">
                 <p>Internet/Web Marketing</p>
             </div>
         </div>
-        <div class="col describe-service-container">
-            <div class="describe-service">
+        <div class="col describe-service">
                 <p class="pt-5 px-3 text-center" >{{myText}}</p>
-                </div>
-        </div>
+            </div>
     </div>
 </div>
-<footer>
-    <div class="row">
-        <div class="col">
-            1 of 3
-        </div>
-        <div class="col">
-            2 of 3
-        </div>
-        <div class="col footer-contact">
-            <h6>
-                Contact Us
-            </h6>
-            <p>
-                +234 903 658 1855<br>
-                info@cloudbrick.ng
-            </p>
-        </div>
+<footer class="foot">
+    <div class="row footr rows">
+      <div class="col">
+        <img src="./assets/cloudfoot.jpg" alt="CB">
+        <p class="footr-p">Nigeria's leading tech solutions company</p>
+      </div>
+      <div class="col">
+        <h5>Company</h5>
+        <p>Solution</p>
+        <p>About Us</p>
+        <p>Contact</p>
+      </div>
+      <div class="col">
+        <h5>Contact Us</h5>
+        <p>+2348097937493</p>
+        <p>info@cloudbrick.com</p>
+      </div>
     </div>
-</footer>   
+  </footer>
