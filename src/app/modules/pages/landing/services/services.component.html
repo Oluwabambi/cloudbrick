@@ -13,7 +13,7 @@
         <div class="collapse navbar-collapse justify-content-end " [ngClass]="{ 'show': isShown }"
           id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" style="padding-right:40px; font-weight: bolder;" aria-current="page" href="#">ABOUT US</a>
+            <a class="nav-link mice" style="padding-right:40px; font-weight: bolder;" aria-current="page" href="#">ABOUT US</a>
             <a class="nav-link" style="padding-right:40px; font-weight: bolder;" routerLink="/services">SERVICES</a>
             <a class="nav-link" style="font-weight: bolder;" routerLink="/contact-us">CONTACT US</a>
   
@@ -56,21 +56,21 @@
     </div>
 </div>
 <footer class="foot">
-    <div class="row footr rows">
-      <div class="col">
-        <img src="./assets/cloudfoot.jpg" alt="CB">
-        <p class="footr-p">Nigeria's leading tech solutions company</p>
-      </div>
-      <div class="col">
-        <h5>Company</h5>
-        <p>Solution</p>
-        <p>About Us</p>
-        <p>Contact</p>
-      </div>
-      <div class="col">
-        <h5>Contact Us</h5>
-        <p>+2348097937493</p>
-        <p>info@cloudbrick.com</p>
-      </div>
+  <div class="row footr rows">
+    <div class="col">
+      <img src="./assets/cloudfoot.jpg" alt="CB">
+      <p class="footr-p">Nigeria's leading tech solutions company</p>
     </div>
-  </footer>
+    <div class="col">
+      <h5>Company</h5>
+      <a class="navli" routerLink="/services"><p style="color:white;">Services</p></a>
+      <a><p>About Us</p></a>
+      <a  class="navli" routerLink="/contact-us"><p style="color:white;">Contact</p></a>
+    </div>
+    <div class="col">
+      <h5>Contact Us</h5>
+      <a  href="tel:+2349036581855" target="_blank" ><p style="color:white;">+2348097937493</p></a>
+      <a href="mailto:info@upperlink.ng" target="_blank" ><p style="color:white;">info@cloudbrick.com</p></a>
+    </div>
+  </div> 
+</footer>
