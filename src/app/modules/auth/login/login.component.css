@@ -18,24 +18,57 @@ header img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 form {
     border: 1px solid;
     border-radius: 15px;
     width: 330px;
+    height:18rem;
+    box-sizing: border-box;
 }
 .form-button{
     border-style: none;
     border-radius: 200px;
     background-color: #4285f4;
-    width:100%;
+    width:50%;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bolder;
     transition: all 2s;
+    margin-left: 5rem;
   }
   .form-button:hover {
     background-color: blue;
   }  
+
+  /* media */
+  @media screen and (max-width:600px) {
+    header img {
+      margin-left: 0 ;
+      max-width: 80%;
+      height: 80px;
+    }
+
+    form {
+      
+      width: 250px;
+      height:16.5rem;
+      
+  }
+  .form-button{
+      border-style: none;
+      border-radius: 200px;
+      background-color: #4285f4;
+      width:50%;
+      margin-left: 4rem;
+     
+    }
+    .form-button:hover {
+      background-color: blue;
+    }  
+
+    
+  }
