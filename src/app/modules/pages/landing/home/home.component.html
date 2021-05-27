@@ -1,27 +1,5 @@
 <!-- NavBar -->
-<header>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light ">
-    <div class="container-fluid">
-      <a class="navbar-brand active" routerLink="/home">
-        <img src="./assets/cloudbrick.png">
-      </a>
-      <button (click)="isShown=!isShown" class="navbar-toggler navbar-btn" type="button" data-bs-toggle="collapse"
-        href="#navbarNavAltMarkup" data-bs-targetg="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end " [ngClass]="{ 'show': isShown }"
-        id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link mice" style="padding-right:40px; font-weight: bolder;" aria-current="page" (click)="showUp()">ABOUT US</a>
-          <a class="nav-link" style="padding-right:40px; font-weight: bolder;" routerLink="/services">SERVICES</a>
-          <a class="nav-link" style="font-weight: bolder;" routerLink="/contact-us">CONTACT US</a>
-
-        </div>
-      </div>
-    </div>
-  </nav>
-</header>
+<app-header></app-header>
 
 <!-- First section-->
 <div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-services',
@@ -10,7 +11,7 @@ export class ServicesComponent implements OnInit {
   // for navbar collapse
   isShown=false;
 
-  constructor() { }
+  constructor(private router: Router) { }
   ngOnInit(): void {
   }
 //service-describe
@@ -48,6 +49,12 @@ We ensure that your website puts you on top of your competitors.`
          We ensure that your website puts you on top of your competitors.`
             
     }
+  }
+
+  // about us
+  goToAbout() {
+    return this.router.navigate(['/home'],
+     {state: {comingFrom: 'services'}});
   }
 
 }

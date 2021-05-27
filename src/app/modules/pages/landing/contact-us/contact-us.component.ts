@@ -1,4 +1,6 @@
+  
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-contact-us',
@@ -6,13 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-us.component.css']
 })
 export class ContactUsComponent implements OnInit {
- 
-  // for navbar collapse
-  isShown=false;
-  
-  constructor() { }
 
-  ngOnInit(): void {
+  // for navbar collapse
+  isShown = false;
+
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {}
+
+  goToAbout() {
+    return this.router.navigate(['/home'],
+     {state: {comingFrom: 'contact-us'}});
   }
 
 }
