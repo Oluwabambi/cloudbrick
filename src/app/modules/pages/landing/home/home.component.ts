@@ -3,6 +3,7 @@ import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -16,6 +17,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   constructor(private route: ActivatedRoute) {
   }
+
 
   ngOnInit(): void {
     // console.log(history); // This should show you contact-us
@@ -61,6 +63,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
         break;
     }
   }
+
+  
 
 }
   

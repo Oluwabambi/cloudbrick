@@ -149,7 +149,7 @@
     <div class="col">
       <h5>Company</h5>
       <a class="navli" routerLink="/services"><p style="color:white;">Services</p></a>
-      <a><p>About Us</p></a>
+      <a [routerLink]="['/home']" fragment="about" (click)="showUp()" class="navli mice"><p style="color:white;">About Us</p></a>
       <a  class="navli" routerLink="/contact-us"><p style="color:white;">Contact</p></a>
     </div>
     <div class="col">
