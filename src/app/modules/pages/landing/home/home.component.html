@@ -23,6 +23,7 @@
   </nav>
 </header>
 <!-- what we provide -->
+<div class="animate__animated animate__fadeInDown">
   <div class="container">
     <div class="row">
       <div class="col " @slideInLeft>
@@ -38,78 +39,119 @@
       </div>
     </div>
   </div>
+</div>
   <div>
     <div style="background-color:#4285f4; margin-top: 10em;">
       <div>
         <h3>CLOUDBRICK LIMITED - SOLUTIONS MADE EASY</h3>
       </div>
-        <div class="rows h-100">
-          <div class="col">
+        <div class="row idea feature-box h-100">
+          <div class="col-sm-five">
             <i class=" material-icons icons" onmouseover="this.style.color='white'"
               onmouseout="this.style.color='lightblue'">lightbulb</i>
             <h5 class="text-center text-white">Idea</h5>
-            <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
-              the shortest time possible</p>
+            <p class="processes">Do you have a amazing idea and you are having difficulty bringing it to life? Thats right. You are at the right place because At Cloudbrick we specialize in bringing your ideas to reality.</p>
           </div>
-          <div class="col">
+          <div class="col-sm-five">
             <i class="material-icons icons" onmouseover="this.style.color='white'"
               onmouseout="this.style.color='lightblue'">grid_view</i>
             <h5 class="text-center text-white">Design</h5>
-            <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
-              the shortest time possible.</p>
+            <p class="processes">In web and mobile application, design is key. Cloudbrick takes it's priority in designing great user interface, or UI, enabling the user to accomplish a given task as simply and efficiently as possible.</p>
           </div>
-          <div class="col">
+          <div class="col-sm-five">
             <i class="material-icons icons" onmouseover="this.style.color='white'"
               onmouseout="this.style.color='lightblue'">developer_mode</i>
             <h5 class="text-center text-white">Development</h5>
-            <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
-              the shortest time possible.</p>
-          </div>
-          <div class="col">
+            <p class="processes">Cloudbrick's development can range from building the simplest static single page of plain text to the most complex web-based and mobile applications. </p>
+          </div>s.
+          <div class="col-sm-five">
             <i class="material-icons icons" onmouseover="this.style.color='white'"
               onmouseout="this.style.color='lightblue'">offline_bolt</i>
             <h5 class="text-center text-white">Testing</h5>
-            <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
-              the shortest time possible.</p>
+            <p class="processes">At cloudbrick we ensure that our web and mobile applications are developed for hand held mobile devices and tested for its functionality, usability ensuring quality user experience</p>
           </div>
-          <div class="col">
+          <div class="col-sm-five">
             <i class="material-icons icons" onmouseover="this.style.color='white'"
               onmouseout="this.style.color='lightblue'">timeline</i>
             <h5 class="text-center text-white">Deployment</h5>
-            <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
-              the shortest time possible.</p>
+            <p class="processes">Cloudbrick make use of the most effective way to deploy your web or mobile applications, we give you the ability to deploy multi-tier applications reliably and consistently.</p>
           </div>
         </div>
       </div>
   </div>
   <div>
+  <!-- What we do  -->
     <div class="container">
-      <div class="row">
+      <div class="row rows idea">
         <div class="col">
-          <img src="./assets/20.svg" alt="whatwedo">
+          <img style="max-width:100%" src="./assets/20.svg" alt="whatwedo">
         </div>
         <div class="col justify-content-center">
           <h4 style="font-family: 'KoHo', sans-serif; margin-left: 90px; margin-top:100px">WHAT WE DO</h4>
-          <ul style="margin-left: 90px; margin-top: 20px;">
-            <li>Mobile App Development</li>
-            <li>Web Application</li>
-            <li>Mobile Marketing</li>
-            <li>Internet/Web Marketing</li>
+          <ul class="wedo-ul">
+            <li><span (click) = "toggleContent('MOBILE')">
+              <i class="material-icons" onmouseover="this.style.color='#4285f4'" onmouseout="this.style.color='black'">expand_more</i>
+              Mobile App Development
+            </span>
+            </li>
+            <div *ngIf ="showContent[0]">
+              <p class="details" >We are just a call away for First Class Professionally Designed Mobile App that is second to none and fully customized to suite your business needs and set you apart from your competitors.</p>
+            </div>
+            <li><span (click) = "toggleContent('WEB')">
+              <i class="material-icons" onmouseover="this.style.color='#4285f4'" onmouseout="this.style.color='black'">expand_more</i>
+              Web Application
+            </span>
+            </li>
+            <div *ngIf ="showContent[1]">
+              <p class="details" >Build fully functional, visually compelling web applications that represent your brand perfectly</p>
+            </div>
+            <li><span (click) = "toggleContent('MOBMARK')">
+              <i class="material-icons" onmouseover="this.style.color='#4285f4'" onmouseout="this.style.color='black'">expand_more</i>
+              UI/UX Design
+            </span>
+            </li>
+            <div *ngIf ="showContent[2]">
+              <p class="details" >Build fully functional web and mobile applications with the design that best represents your brand </p>
+            </div>
+            <li><span (click) = "toggleContent('INTERNET')">
+              <i class="material-icons" onmouseover="this.style.color='#4285f4'" onmouseout="this.style.color='black'">expand_more</i>
+              Mobile/Web Marketing
+            </span>
+            </li>
+            <div *ngIf ="showContent[3]">
+              <p class="details" >We have various marketing channels that use the Web and sms to drive direct sales via electronic commerce, in addition to sales leads from Web sites or emails.</p>
+            </div>
           </ul>
         </div>
       </div>
     </div>
       <!-- About us -->
-        <div style="background-color: lightgray;" class="row" id="about-us">
+        <div style="background-color: lightgray;" class="row idea rows" id="about-us">
           <div class="col justify-content-center">
             <h5 style="font-family: 'KoHo', sans-serif; margin-left: 90px; margin-bottom:10px; margin-top:50px">GET TO KNOW US</h5>
             <p style="margin-left: 30px;">CloudBrick is a Mobile and Web Application Development and Digital Marketing Management that is also a new media provider offering an array of next-generation mobile solutions based on innovative technologies</p>
           </div>
           <div class="col">
-            <img src="./assets/Team building.svg" alt="">
+            <img style="max-width:100%" src="./assets/Team building.svg" alt="">
           </div>
         </div>
   </div>
-      <footer>
-        <p>Our footer to be continued...</p>
-      </footer>
+  <footer class="foot">
+    <div class="row footr rows">
+      <div class="col">
+        <img src="./assets/cloudfoot.jpg" alt="CB">
+        <p class="footr-p">Nigeria's leading tech solutions company</p>
+      </div>
+      <div class="col">
+        <h5>Company</h5>
+        <a class="navli" routerLink="/services"><p style="color:white;">Services</p></a>
+        <a><p>About Us</p></a>
+        <a  class="navli" routerLink="/contact-us"><p style="color:white;">Contact</p></a>
+      </div>
+      <div class="col">
+        <h5>Contact Us</h5>
+        <a  href="tel:+2349036581855" target="_blank" ><p style="color:white;">+2348097937493</p></a>
+        <a href="mailto:info@upperlink.ng" target="_blank" ><p style="color:white;">info@cloudbrick.com</p></a>
+      </div>
+    </div> 
+  </footer>

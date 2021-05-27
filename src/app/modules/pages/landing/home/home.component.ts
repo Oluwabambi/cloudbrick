@@ -24,16 +24,43 @@ import { Component, OnInit, ViewChild} from '@angular/core';
 
 export class HomeComponent implements OnInit {
   
-  // for navbar collapse
-  isShown = false;
   constructor() { }
 
   ngOnInit(): void {
     
-  
+}
+  // for navbar collapse
+  isShown = false;
+    
+  // about us
+  showUp() {
+    const element:any = document.querySelector('#about');
+    element.scrollIntoView();
+}
 
+//What we do
+showContent:boolean[]=[false,false,false,false];
+toggleContent(type:string){
+  switch(type){
+  case 'MOBILE':
+  this.showContent[0] = !this.showContent[0];
+  break;
+  case 'WEB':
+  this.showContent[1] = !this.showContent[1];
+  break;
+  case 'MOBMARK':
+  this.showContent[2] = !this.showContent[2];
+  break;
+  case 'INTERNET':
+  this.showContent[3] = !this.showContent[3];
+  break;
+  }
 }
   
+
     
 } 
+  
+
+
 

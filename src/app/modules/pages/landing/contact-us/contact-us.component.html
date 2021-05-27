@@ -1,32 +1,32 @@
 <!-- NavBar -->
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container-fluid">
-            <a class="navbar-brand " routerLink="/home"><img src="./assets/logob.jpeg"></a>
-            <button class="navbar-toggler navbar-btn" (click)="isShown=!isShown" type="button" data-bs-toggle="collapse" href="#navbarNavAltMarkup"
-                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" [ngClass]="{'show' : isShown}" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link " style="color:blue; font-weight: bolder;" aria-current="page" href="#">ABOUT
-                        US</a>
-                    <a class="nav-link " style="color:blue; font-weight: bolder;" routerLink="/services">SERVICES</a>
-                    <a class="nav-link active " style="color:blue; font-weight: bolder;" routerLink="/contact-us">CONTACT
-                        US</a>
-
-                </div>
-            </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand active" routerLink="/home">
+          <img src="./assets/cloudbrick.png">
+        </a>
+        <button (click)="isShown=!isShown" class="navbar-toggler navbar-btn" type="button" data-bs-toggle="collapse"
+          href="#navbarNavAltMarkup" data-bs-targetg="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end " [ngClass]="{ 'show': isShown }"
+          id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link mice" style="padding-right:40px; font-weight: bolder;" aria-current="page" href="#">ABOUT US</a>
+            <a class="nav-link" style="padding-right:40px; font-weight: bolder;" routerLink="/services">SERVICES</a>
+            <a class="nav-link" style="font-weight: bolder;" routerLink="/contact-us">CONTACT US</a>
+  
+          </div>
         </div>
+      </div>
     </nav>
-</header>
+  </header>
 
 <div class="line"></div>
 <h6 class="container-head">GET IN TOUCH WITH US</h6>
 
-<div>
-    <div class="container">
+    <!-- <div class="container">
         <div class="row order-2">
             <div class="col contact-container ">
                 <form class="form-container">
@@ -66,26 +66,74 @@
                         E-mail: info@cloudbrick.ng
                     </p>
                 </div>
+            </div>
+        </div>
+    </div> -->
 
-            </div>
-        </div>
-    </div>
-<footer>
+    <div class="container mb-5">
         <div class="row">
-            <div class="col">
-                1 of 3
+            <div class="col-sm-6 mt-3">
+              <div class="contact">
+                <div class="card-body">
+                    <form style= "max-width: 100%; height:330px;">
+                        <input style="margin-top: 20px;" type="text" class="form-control mb-4" placeholder="Name" aria-label="Name">
+                        <input type="email" class="form-control mb-4" placeholder="Email-Address"
+                            aria-label="Email-Address">
+                        <select class="form-select form-control mb-4" aria-label="Default select example">
+                            <option value="Project Type">Project Type</option>
+                            <option value="Web Application">Web Application</option>
+                            <option value="Mobile Application">Mobile Application</option>
+                            <option value="Mobile Marketing">Mobile Marketing</option>
+                            <option value="Internet/Web Marketing">Internet/Web Marketing</option>
+                        </select>
+                        <select class="form-select form-control mb-4" aria-label="Default select example">
+                            <option value="budget">Budget</option>
+                            <option value="10,000-30,000">10,000-30,000</option>
+                            <option value="40,000-60,000">40,000-60,000</option>
+                            <option value="60,000-100,000">60,000-100,000</option>
+                        </select>
+                        <input type="text" class="form-control" placeholder="Send us a Message"
+                            style="height:60px;" aria-label="Message">
+                    </form>
+                    <button type="submit" class="btn  form-button">Submit</button>
+                </div>
+              </div>
             </div>
-            <div class="col">
-                2 of 3
+            <div class="col-sm-6 mt-3">
+              <div class="visit">
+                <div class="card-body">
+                  <h5 class="card-title">Visit Us At:</h5>
+                  <a class="nav-link" href="https://goo.gl/maps/x9HcJdbmADVc9rvV7" target="_blank"><p class="card-text">
+                    ASSBIFI House,
+                    4 ASSBIFI Road, Central Business District,
+                    Alausa, Ikeja.
+                    Lagos.</p>
+                  </a>
+                  <h5 class="card-title">Contact Us At:</h5>
+                  <p class="card-text">Telephone: <a  href="tel:+2349036581855" target="_blank" >+234 903 658 1855</a><p>
+                    <p class="card-text">E-mail: <a  href="mailto:info@upperlink.ng" target="_blank" >info@cloudbrick.ng</a><p>    
+               </div>
+              </div>
             </div>
-            <div class="col footer-contact">
-                <h6>
-                    Contact Us
-                </h6>
-                <p>
-                    +234 903 658 1855<br>
-                    info@cloudbrick.ng
-                </p>
-            </div>
+          </div>
+    </div>
+    
+    <footer class="foot">
+      <div class="row footr rows">
+        <div class="col">
+          <img src="./assets/cloudfoot.jpg" alt="CB">
+          <p class="footr-p">Nigeria's leading tech solutions company</p>
         </div>
-</footer>   
+        <div class="col">
+          <h5>Company</h5>
+          <a class="navli" routerLink="/services"><p style="color:white;">Services</p></a>
+          <a><p>About Us</p></a>
+          <a  class="navli" routerLink="/contact-us"><p style="color:white;">Contact</p></a>
+        </div>
+        <div class="col">
+          <h5>Contact Us</h5>
+          <a  href="tel:+2349036581855" target="_blank" ><p style="color:white;">+2348097937493</p></a>
+          <a href="mailto:info@upperlink.ng" target="_blank" ><p style="color:white;">info@cloudbrick.com</p></a>
+        </div>
+      </div> 
+    </footer>
