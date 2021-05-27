@@ -1,52 +1,41 @@
-  
 header, body{
-  /* padding-left: 10rem;
-  padding-right: 10rem;
-  padding-top: 3rem; */
   font-family: 'KoHo', sans-serif;
 }
-/* div{
+.box-size{
   box-sizing: border-box;
-} */
+}
+.rows{
+  margin-right: 15px;
+  margin-left: 15px;
+}
 /* NavBar */
 header img {
   margin-left: 70px ;
-  width: 90px;
+  max-width: 100%;
   height: 90px;
 }
 navbar-nav a {
+
   color:#8cc2fb; 
-  font-weight: bolder;
-  
+  font-weight: bolder
 }
-.navbar-btn{
-  border-color: blue ;
-}
-/* solution */
+
+/* First-section*/
 .typewriter{
   font-family: 'KoHo', sans-serif;
   font-size: 48px;
   font-weight: bolder;
-  width: 450px;
+  max-width: 100%;
   margin-top: 140px;
-  /* overflow: hidden;
-  animation:typing  steps(40), blink 1s step(40) infinite;
-  white-space:normal; */
   box-sizing: border-box;
 }
-@keyframes typing{
-  from{
-    width:0%;
-  }
-  to{
-    width:100%;
-  }
-}
-/* .container p {
-  color:blue;
-  width:250px;
+.firstp {
+  margin-top: 40px;
+  max-width: 100%;
+  font-family: 'Quicksand', sans-serif;
   font-weight: lighter;
-} */
+  font-size: 20px;
+}
 .container button {
   width: 7rem;
   height:3rem;
@@ -54,7 +43,6 @@ navbar-nav a {
   border-color: white;
   border-radius:20px;
   border-style: none;
-  /* font-weight: bold; */
   font-family: 'Quicksand', sans-serif;
   margin-top: 40px;
   transition: all 1s;
@@ -70,103 +58,24 @@ navbar-nav a {
   font-size: large;   
 }
 .container img{
-  /* width:34rem; */
-  max-width: 150%;
+  max-width: 100%;
   height: 450px;
 }       
 .image{
-    /* max-width: 100%; */
+
    width: 34rem; 
   height: 450px;
 }
-/* .rows {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-} */
-
-/* .col1 {
-  display: inline-block;
-} */
-
-
-h3 {
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  margin-bottom: 90px;
-  color: white;
-
-
-}
 
 /* Features */
+.feature-container{
+  background-color:#4285f4;
+  margin-top: 10em;
+}
 .feature-box{
-  text-align: center;
-}
-.feature-box h4{
-  color:white;
-}
-.ideastory{
-  color:white;
-  text-align: center;
-}
-@media screen and (max-width:600px) {
-  header, body{
-    padding-left: 0rem;
-    padding-right: 0rem;
-    padding-top: 3rem;
-  }
-  .typewriter{
-    overflow: hidden;
-    /* animation:typing 5s steps(30, end), blink 1s step-end infinite;
-    white-space:nowrap; */
-    box-sizing: border-box;
-  }
-  @keyframes typing{
-    from{
-      width:0%;
-    }
-    to{
-      width:100%;
-    }
-  }
-  .container img{
-    /* width:28rem; */
-    max-width: 100%;
-    height:490px;
-  }
-}
-.animate__animated .animate__hinge:click{
-  
-}
-@media screen and (max-width:1300px){
-  header{
-    padding-left: 0rem;
-    padding-right: 0rem;
-    padding-top: 3rem;
-  }
-  body{
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 3rem;
-  }
-  .typewriter{
-    overflow: hidden;
-    /* animation:typing 5s steps(30, end), blink 1s step-end infinite;
-    white-space:nowrap; */
-    box-sizing: border-box;
-  }
-  @keyframes typing{
-    from{
-      width:0%;
-    }
-    to{
-      width:100%;
-    }
-  }
-  .container img{
-    margin-top: 5px;
-  }
-  
+  background-color: #4285f4;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 .processes {
   position: relative;
@@ -182,7 +91,6 @@ h3 {
   margin-top: 15px;
   position: relative;
   width: 100%; 
-  /* align-items: center; */
   color: lightblue; 
   font-size: 50px; 
   text-align: center;
@@ -190,23 +98,6 @@ h3 {
 h5 {
   margin-top: 20px;
   margin-bottom: 20px;
-}
-.firstp {
-  
-  margin-top: 40px;
-  width:500px;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: lighter;
-  font-size: 20px;
-}
-.col-five{
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  -ms-flex: 0 0 20%;
-  flex: 0 0 20%;
-  max-width: 20%;
 }
 .col-sm-five{
   position: relative;
@@ -217,17 +108,60 @@ h5 {
   flex: 0 0 20%;
   max-width: 20%;
 }
+
+/* what-we-do */
+.wedo-ul{
+  margin-left: 90px;
+  margin-top: 20px;
+  list-style: none;
+}
+.wedo-ul i{
+  position: relative;
+  top:5px;
+}
+
+/* about-us */
+#about h5{
+  font-family: 'KoHo', sans-serif;
+  margin-left: 90px;
+  margin-bottom:10px;
+  margin-top:50px;
+}
+#about p{
+  margin-left: 30px;
+}
+
+/* footer */
+.foot {
+  background-color: #4285f4;
+  margin-right: 0px;
+  color: white;
+  padding-bottom: 30px;
+}
 footer img {
   width: 90px;
   height: 90px;
   margin-top: 20px;
   margin-left: 20px;
 }
-.foot {
-  background-color: #4285f4;
-  margin-right: 0px;
-  color: white;
-  padding-bottom: 30px;
+.footr{
+  padding-top: 20px;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+.footr-p{
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 330px) {
+  h4 {
+    text-align: center;
+  }
+  ul {
+    padding: 0;
+  }
 }
 @media (max-width: 576px) {
   .idea{
@@ -238,6 +172,29 @@ footer img {
     /* width: 100%; */
     padding-right: 15px;
     padding-left: 15px;
+  }
+}
+@media screen and (max-width:600px) {
+  header, body{
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 3rem;
+  }
+  .typewriter{
+    box-sizing: border-box;
+  }
+  @keyframes typing{
+    from{
+      width:0%;
+    }
+    to{
+      width:100%;
+    }
+  }
+  .container img{
+    /* width:28rem; */
+    max-width: 100%;
+    height:490px;
   }
 }
 @media (max-width: 790px) {
@@ -256,154 +213,27 @@ footer img {
     width: 100%;
     text-align: center;
   } 
-  
-/* .typewriter{
-  font-family: 'KoHo', sans-serif;
-  margin-top: 40px;
-  overflow: hidden;
-  animation:typing 5s steps(30, end), blink 1s step-end infinite;
-  white-space:nowrap;
-  box-sizing: border-box;
-}
-@keyframes typing{
-  from{
-    width:0%;
+  .footr {
+    flex-direction: column;
   }
-  to{
-    width:100%;
   }
-}
-.firstp {
-  margin-top: 20px;
-  width:250px;
-  font-weight: lighter;
-}
-.container button {
-  width: 7rem;
-  height:3rem;
-  background-color:#8cc2fb;
-  border-color: white;
-  border-radius:10px;
-  border-style: none;
-  font-weight: bold;
-  margin-top: 20px;
-  
-}
-.container button a{
-  color:white;
-  text-decoration: none;
-}
-.container button:hover {
-  width: 7.3rem;
-  height: 3.2rem;
-  background-color: dodgerblue;
-  font-size: large;   
-}
-.container img{ */
-  /* width:34rem; */
-  /* max-width: 150%;
-  height: 450px; */
-}       
-/* Features */
-/* .feature-box{
-  text-align: center;
-}
-.feature-box h4{
-  color:white;
-}
-.processes {
-  position: relative;
-  color: white;
-  text-align: center;
-  padding-left: 0px;
-}
-.icons {
-  margin-top: 15px;
-  position: relative;
-  padding-left: 95px;
-  color: lightblue; 
-  font-size: 50px; 
-  max-width: 100%;
-  
-}
-.idea{
-  width:80px;
-  height:80px;
-  border:white;
-  background-color: white;
-  border-radius: 50%;
-  align-self: center;
-}
-.ideastory{
-  color:white;
-  text-align: center;
-} */
-/* whatwedo */
-/* .image{
-  width: 34rem;
-  height: 450px;
-} */
-/* footer */
-/* footer {
-  background-color: #8cc2fb;
-} */
 
-/* media  for 600px */
-/* @media screen and (max-width:600px) {
-  header, body{
-    padding-left: 0rem;
-    padding-right: 0rem;
-    padding-top: 3rem;
-  }
-  .typewriter{
-    overflow: hidden;
-    animation:typing 5s steps(30, end), blink 1s step-end infinite;
-    white-space:pre-wrap;
-    box-sizing: border-box;
-  }
-  @keyframes typing{
-    from{
-      width:0%;
+  @media screen and (max-width:1300px){
+    header{
+      padding-left: 0rem;
+      padding-right: 0rem;
+      padding-top: 3rem;
     }
-    to{
-      width:100%;
+    body{
+      padding-left: 3rem;
+      padding-right: 3rem;
+      padding-top: 3rem;
     }
-  }
-  .container img{
-    width:28rem;
-    height:490px;
-  }
-} */
-/* @media screen and (max-width:1300px){
-  header{
-    padding-left: 0rem;
-    padding-right: 0rem;
-    padding-top: 3rem;
-  }
-  body{
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 3rem;
-  }
-  .typewriter{
-    overflow: hidden;
-    animation:typing 5s steps(30, end), blink 1s step-end infinite;
-    white-space:pre-wrap;
-    box-sizing: border-box;
-  }
-  @keyframes typing{
-    from{
-      width:0%;
+    .typewriter{
+      box-sizing: border-box;
     }
-    to{
-      width:100%;
+    .container img{
+      margin-top: 5px;
     }
+    
   }
-  .container img{
-    margin-top: 5px;
-  }
-  
-} */
-
-
-

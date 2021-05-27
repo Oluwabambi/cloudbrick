@@ -13,7 +13,7 @@
         <div class="collapse navbar-collapse justify-content-end " [ngClass]="{ 'show': isShown }"
           id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" style="padding-right:40px; font-weight: bolder;" aria-current="page" onmouseover="this.style.cursor='pointer'" >ABOUT US</a>
+            <a class="nav-link" style="padding-right:40px; font-weight: bolder;" aria-current="page" href="#">ABOUT US</a>
             <a class="nav-link" style="padding-right:40px; font-weight: bolder;" routerLink="/services">SERVICES</a>
             <a class="nav-link" style="font-weight: bolder;" routerLink="/contact-us">CONTACT US</a>
   
@@ -25,7 +25,7 @@
 <div class="container">
     <div class="line"></div>
     <div>
-        <h3>At CloudBrick, we bring solutions to you.</h3>
+        <h3 style="font-family: 'KoHo', sans-serif;">At CloudBrick, we bring solutions to you.</h3>
     </div>
     <div class="row services-container">
         <div class="col services">
@@ -50,29 +50,27 @@
                 <p>Internet/Web Marketing</p>
             </div>
         </div>
-        <div class="col describe-service-container">
-            <div class="describe-service">
+        <div class="col describe-service">
                 <p class="pt-5 px-3 text-center" >{{myText}}</p>
-                </div>
-        </div>
+            </div>
     </div>
 </div>
-<footer>
-    <div class="row">
-        <div class="col">
-            1 of 3
-        </div>
-        <div class="col">
-            2 of 3
-        </div>
-        <div class="col footer-contact">
-            <h6>
-                Contact Us
-            </h6>
-            <p>
-                +234 903 658 1855<br>
-                info@cloudbrick.ng
-            </p>
-        </div>
+<footer class="foot">
+    <div class="row footr rows">
+      <div class="col">
+        <img src="./assets/cloudfoot.jpg" alt="CB">
+        <p class="footr-p">Nigeria's leading tech solutions company</p>
+      </div>
+      <div class="col">
+        <h5>Company</h5>
+        <p>Solution</p>
+        <p>About Us</p>
+        <p>Contact</p>
+      </div>
+      <div class="col">
+        <h5>Contact Us</h5>
+        <p>+2348097937493</p>
+        <p>info@cloudbrick.com</p>
+      </div>
     </div>
-</footer>   
+  </footer>

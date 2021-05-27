@@ -13,7 +13,7 @@
       <div class="collapse navbar-collapse justify-content-end " [ngClass]="{ 'show': isShown }"
         id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link nav-about " (click)='showUp()' style="padding-right:40px; font-weight: bolder;" aria-current="page" onmouseover="this.style.cursor='pointer'" >ABOUT US</a>
+          <a class="nav-link" style="padding-right:40px; font-weight: bolder;" aria-current="page" (click)="showUp()">ABOUT US</a>
           <a class="nav-link" style="padding-right:40px; font-weight: bolder;" routerLink="/services">SERVICES</a>
           <a class="nav-link" style="font-weight: bolder;" routerLink="/contact-us">CONTACT US</a>
 
@@ -22,87 +22,109 @@
     </div>
   </nav>
 </header>
-<!-- what we provide -->
-<div class="container" style="box-sizing: border-box;">
-  <div style="box-sizing: border-box;" class="row idea">
-    <div class="col " @slideInLeft>
-      <h2 class="typewriter">Evolve Your Business With CloudBrick</h2>
-      <p class="firstp">Using a secure and cost-effective means, CloudBrick aims at providing your business with the
-        best tech solutions to get your projects up and running </p>
-      <button style="box-sizing: border-box;">
-        <a routerLink="/contact-us">Get Started</a>
-      </button>
-    </div>
-    <div class="col image">
-      <img src="./assets/Landing.svg">
-    </div>
-  </div>
-</div>
-<!-- <div class="container-fluid"> -->
-  <div style="background-color:#4285f4; margin-top: 10em; box-sizing: border-box;">
-    <div>
-      <h3>CLOUDBRICK LIMITED - SOLUTIONS MADE EASY</h3>
-    </div>
-  <div style="background-color:#4285f4;" class="row idea h-100">
-    <div class="col-sm-five">
-      <i class="material-icons icons" onmouseover="this.style.color='white'"
-        onmouseout="this.style.color='lightblue'">lightbulb</i>
-      <h5 class="text-center text-white">Idea</h5>
-      <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
-        the shortest time possible</p>
-    </div>
-    <div class="col-sm-five">
-      <i class="material-icons icons" onmouseover="this.style.color='white'"
-        onmouseout="this.style.color='lightblue'">grid_view</i>
-      <h5 class="text-center text-white">Design</h5>
-      <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
-        the shortest time possible.</p>
-    </div>
-    <div class="col-sm-five">
-      <i class="material-icons icons" onmouseover="this.style.color='white'"
-        onmouseout="this.style.color='lightblue'">developer_mode</i>
-      <h5 class="text-center text-white">Development</h5>
-      <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
-        the shortest time possible.</p>
-    </div>
-    <div class="col-sm-five">
-      <i class="material-icons icons" onmouseover="this.style.color='white'"
-        onmouseout="this.style.color='lightblue'">offline_bolt</i>
-      <h5 class="text-center text-white">Testing</h5>
-      <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
-        the shortest time possible.</p>
-    </div>
-    <div class="col-sm-five">
-      <i class="material-icons icons" onmouseover="this.style.color='white'"
-        onmouseout="this.style.color='lightblue'">timeline</i>
-      <h5 class="text-center text-white">Deployment</h5>
-      <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
-        the shortest time possible.</p>
-    </div>
-  </div>
-</div>  
+
+<!-- First section-->
 <div>
-          <div class="container">
-            <div class="row idea">
-              <div class="col">
-                <img style="max-width:100%" src="./assets/whatwedo.jpeg" alt="whatwedo">
-              </div>
-              <div class="col justify-content-center">
-                <h4 style="font-family: 'KoHo', sans-serif; margin-left: 90px; margin-top:100px">WHAT WE DO</h4>
-          <ul style="margin-left: 90px; margin-top: 20px;">
-            <li><span (click) = "toggleContent('MOBILE')">Mobile App Development</span></li>
+  <div class="container box-size">
+    <div class="row idea rows box-size">
+      <div class="col">
+        <h2 class="typewriter">
+          Evolve Your Business With CloudBrick
+        </h2>
+        <p class="firstp">
+          Using a secure and cost-effective means, CloudBrick aims at providing your business with the
+          best tech solutions to get your projects up and running </p>
+        <button class="box-size">
+          <a routerLink="/contact-us">Get Started</a>
+        </button>
+      </div>
+      <div class="col image">
+        <img src="./assets/Landing.svg">
+      </div>
+    </div>
+  </div>
+
+  <!-- Features -->
+    <div class="feature-container box-size">
+      <!-- <div>
+        <h3>CLOUDBRICK LIMITED - SOLUTIONS MADE EASY</h3>
+      </div> -->
+    <div class="row idea feature-box h-100">
+      <div class="col-sm-five">
+       <i class="material-icons icons" onmouseover="this.style.color='white'" onmouseout="this.style.color='lightblue'">lightbulb</i>
+        <h5 class="text-center text-white">Idea</h5>
+        <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
+          the shortest time possible</p>
+      </div>
+      <div class="col-sm-five">
+        <i class="material-icons icons" onmouseover="this.style.color='white'"
+          onmouseout="this.style.color='lightblue'">grid_view</i>
+        <h5 class="text-center text-white">Design</h5>
+        <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
+          the shortest time possible.</p>
+      </div>
+      <div class="col-sm-five">
+        <i class="material-icons icons" onmouseover="this.style.color='white'"
+          onmouseout="this.style.color='lightblue'">developer_mode</i>
+        <h5 class="text-center text-white">Development</h5>
+        <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
+          the shortest time possible.</p>
+      </div>
+      <div class="col-sm-five">
+        <i class="material-icons icons" onmouseover="this.style.color='white'"
+          onmouseout="this.style.color='lightblue'">offline_bolt</i>
+        <h5 class="text-center text-white">Testing</h5>
+        <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
+          the shortest time possible.</p>
+      </div>
+      <div class="col-sm-five">
+        <i class="material-icons icons" onmouseover="this.style.color='white'"
+          onmouseout="this.style.color='lightblue'">timeline</i>
+        <h5 class="text-center text-white">Deployment</h5>
+        <p class="processes">We have one mission at CloudBrick: to improve your company beyond your wildest dreams in
+          the shortest time possible.</p>
+      </div>
+    </div>
+  </div>  
+  <div>
+    <!-- what-we-do -->
+    <div class="container">
+      <div class="row rows idea">
+        <div class="col">
+          <img style="max-width:100%" src="./assets/20.svg" alt="whatwedo">
+        </div>
+        <div class="col justify-content-center">
+          <h4 style="font-family: 'KoHo', sans-serif; margin-left: 90px; margin-top:100px">WHAT WE DO</h4>
+          <ul class="wedo-ul">
+            <li><span (click) = "toggleContent('MOBILE')">
+              <i class="material-icons" onmouseover="this.style.color='#4285f4'" onmouseout="this.style.color='black'">expand_more</i>
+              Mobile App Development
+            </span>
+            </li>
             <div *ngIf ="showContent[0]">
-            <p class="details" >kdkldkj</p>
-          </div>
-            <li (click) = "toggleContent('WEB')">Web Application</li>
+              <p class="details" >kdkldkj</p>
+            </div>
+            <li><span (click) = "toggleContent('WEB')">
+              <i class="material-icons" onmouseover="this.style.color='#4285f4'" onmouseout="this.style.color='black'">expand_more</i>
+              Web Application
+            </span>
+          </li>
             <div *ngIf ="showContent[1]">
               <p class="details" >kdkldkj</p>
             </div>
-            <li (click) = "toggleContent('MOBMARK')">Mobile Marketing</li>
+            <li><span (click) = "toggleContent('MOBMARK')">
+              <i class="material-icons" onmouseover="this.style.color='#4285f4'" onmouseout="this.style.color='black'">expand_more</i>
+              Mobile Marketing
+            </span>
+            </li>
             <div *ngIf ="showContent[2]">
               <p class="details" >kdkldkj</p>
             </div>
-            <li (click) = "toggleContent('INTERNET')">Internet/Web Marketing</li>
+            <li><span (click) = "toggleContent('INTERNET')">
+              <i class="material-icons" onmouseover="this.style.color='#4285f4'" onmouseout="this.style.color='black'">expand_more</i>
+              Internet/Web Marketing
+            </span>
+            </li>
             <div *ngIf ="showContent[3]">
               <p class="details" >kdkldkj</p>
             </div>
@@ -110,13 +132,14 @@
         </div>
       </div>
     </div>
-    <div>
+    <div style="background-color: lightgray;">
+
       <!-- About us -->
-      <div class="row idea" id="about">
+      <div class="row idea rows" id="about">
         <div class="col justify-content-center">
-          <h5 style="font-family: 'KoHo', sans-serif; margin-left: 90px; margin-bottom:10px; margin-top:50px">GET TO
-            KNOW US</h5>
-          <p style="margin-left: 30px;">CloudBrick is a Mobile and Web Application Development and Digital Marketing
+          <h5>GET TO KNOW US</h5>
+          <p>
+            CloudBrick is a Mobile and Web Application Development and Digital Marketing
             Management that is also a new media provider offering an array of next-generation mobile solutions based on
             innovative technologies</p>
         </div>
@@ -125,7 +148,47 @@
         </div>
       </div>
 
-      </div>
+
+    </div>
+  </div>
+</div>
+<footer class="foot">
+  <div class="row footr rows">
+    <div class="col">
+      <img src="./assets/cloudfoot.jpg" alt="CB">
+      <p class="footr-p">Nigeria's leading tech solutions company</p>
+    </div>
+    <div class="col">
+      <h5>Company</h5>
+      <p>Solution</p>
+      <p>About Us</p>
+      <p>Contact</p>
+    </div>
+    <div class="col">
+      <h5>Contact Us</h5>
+      <p>+2348097937493</p>
+      <p>info@cloudbrick.com</p>
+    </div>
+  </div>
+</footer>    
+<!-- 
       <footer>
-        <p>Our footer to be continued...</p>
-      </footer>
+        <div class="row">
+            <div class="col">
+                <img src="./assets/newcloud2.jpg" alt="">
+                <p>Nigeria's leading tech solutions company</p>
+            </div>
+            <div class="col">
+                2 of 3
+            </div>
+            <div class="col footer-contact">
+                <h6>
+                    Contact Us
+                </h6>
+                <p>
+                    +234 903 658 1855<br>
+                    info@cloudbrick.ng
+                </p>
+            </div>
+        </div>
+</footer> -->
