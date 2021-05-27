@@ -7,23 +7,16 @@ import {Router} from '@angular/router';
   styleUrls: ['./contact-us.component.css']
 })
 export class ContactUsComponent implements OnInit {
- 
+
   // for navbar collapse
-  isShown=false;
+  isShown = false;
 
+  constructor(private router: Router) {}
 
-  
-  constructor(private router: Router) { 
-    
+  ngOnInit(): void {}
+
+  goToAbout() {
+    return this.router.navigate(['/home'], {state: {comingFrom: 'contact-us'}});
   }
 
-  ngOnInit(): void {
-    
-  }
-  
-// goToAbout(){
-//   return this.router.navigate(['/home'], 
-//   {state: {comingFrom: 'contact-us'}})
-    
-// }
 }
