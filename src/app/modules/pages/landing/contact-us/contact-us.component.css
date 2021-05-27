@@ -136,6 +136,9 @@ footer img {
   font-family: 'Quicksand', sans-serif;
   text-align: center;
 }
+.footr h5 {
+  font-weight: bold;
+}
 .footr-p{
   padding-left: 20px;
   padding-top: 20px;
