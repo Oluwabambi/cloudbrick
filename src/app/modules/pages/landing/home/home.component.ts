@@ -26,6 +26,7 @@ import {Router} from '@angular/router';
 
 export class HomeComponent implements OnInit {
   
+<<<<<<< HEAD
 
  
   
@@ -43,8 +44,41 @@ export class HomeComponent implements OnInit {
     }
 
   
+=======
+  constructor() { }
 
+  ngOnInit(): void {
+    
 }
+  // for navbar collapse
+  isShown = false;
+    
+  // about us
+  showUp() {
+    const element:any = document.querySelector('#about');
+    element.scrollIntoView();
+}
+>>>>>>> 9cd2afc77964acf2efbfbc2b0b66efbbb0dda000
+
+//What we do
+showContent:boolean[]=[false,false,false,false];
+toggleContent(type:string){
+  switch(type){
+  case 'MOBILE':
+  this.showContent[0] = !this.showContent[0];
+  break;
+  case 'WEB':
+  this.showContent[1] = !this.showContent[1];
+  break;
+  case 'MOBMARK':
+  this.showContent[2] = !this.showContent[2];
+  break;
+  case 'INTERNET':
+  this.showContent[3] = !this.showContent[3];
+  break;
+  }
+}
+<<<<<<< HEAD
     // for navbar collapse
     isShown = false;
     
@@ -72,6 +106,10 @@ export class HomeComponent implements OnInit {
     break;
     }
   }
+=======
+  
+
+>>>>>>> 9cd2afc77964acf2efbfbc2b0b66efbbb0dda000
     
 } 
 

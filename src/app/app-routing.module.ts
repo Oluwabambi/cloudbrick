@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+=======
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+>>>>>>> 9cd2afc77964acf2efbfbc2b0b66efbbb0dda000
 
 const routesApp: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -15,8 +19,7 @@ const routesApp: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routesApp),NgbModule],
+  imports: [RouterModule.forRoot(routesApp)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {
-}
+export class AppRoutingModule { }
