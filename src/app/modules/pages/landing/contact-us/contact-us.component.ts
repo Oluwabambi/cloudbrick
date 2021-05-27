@@ -21,9 +21,9 @@ export class ContactUsComponent implements OnInit {
     
   }
   
-goToAbout(){
-  return this.router.navigate(['/home'], 
-  {state: {comingFrom: 'contact-us'}})
+// goToAbout(){
+//   return this.router.navigate(['/home'], 
+//   {state: {comingFrom: 'contact-us'}})
     
-}
+// }
 }

@@ -13,7 +13,7 @@
         <div class="collapse navbar-collapse justify-content-end " [ngClass]="{ 'show': isShown }"
           id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" style="padding-right:40px; font-weight: bolder;" aria-current="page" href="#">ABOUT US</a>
+            <a class="nav-link mice" style="padding-right:40px; font-weight: bolder;" aria-current="page" href="#">ABOUT US</a>
             <a class="nav-link" style="padding-right:40px; font-weight: bolder;" routerLink="/services">SERVICES</a>
             <a class="nav-link" style="font-weight: bolder;" routerLink="/contact-us">CONTACT US</a>
   
@@ -103,13 +103,15 @@
               <div class="visit">
                 <div class="card-body">
                   <h5 class="card-title">Visit Us At:</h5>
-                  <p class="card-text">ASSBIFI House,
+                  <a class="nav-link" href="https://goo.gl/maps/x9HcJdbmADVc9rvV7" target="_blank"><p class="card-text">
+                    ASSBIFI House,
                     4 ASSBIFI Road, Central Business District,
                     Alausa, Ikeja.
                     Lagos.</p>
+                  </a>
                   <h5 class="card-title">Contact Us At:</h5>
-                  <p class="card-text">Telephone: +234 903 658 1855<p>
-                    <p class="card-text">E-mail: info@cloudbrick.ng<p>    
+                  <p class="card-text">Telephone: <a  href="tel:+2349036581855" target="_blank" >+234 903 658 1855</a><p>
+                    <p class="card-text">E-mail: <a  href="mailto:info@upperlink.ng" target="_blank" >info@cloudbrick.ng</a><p>    
 
                </div>
               </div>
@@ -125,18 +127,13 @@
           </div>
           <div class="col">
             <h5>Company</h5>
-            <p>Solution</p>
-            <p>About Us</p>
-            <p>Contact</p>
+            <a class="navli" routerLink="/services"><p style="color:white;">Services</p></a>
+            <a><p>About Us</p></a>
+            <a  class="navli" routerLink="/contact-us"><p style="color:white;">Contact</p></a>
           </div>
           <div class="col">
             <h5>Contact Us</h5>
-            <p>+2348097937493</p>
-            <p>info@cloudbrick.com</p>
+            <a  href="tel:+2349036581855" target="_blank" ><p style="color:white;">+2348097937493</p></a>
+            <a href="mailto:info@upperlink.ng" target="_blank" ><p style="color:white;">info@cloudbrick.com</p></a>
           </div>
-        </div>
-<<<<<<< HEAD
-      </footer>
-=======
-      </footer>
->>>>>>> 9cd2afc77964acf2efbfbc2b0b66efbbb0dda000
+

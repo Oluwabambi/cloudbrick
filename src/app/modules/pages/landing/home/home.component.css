@@ -8,6 +8,12 @@ header, body{
   margin-right: 15px;
   margin-left: 15px;
 }
+.navli{
+  text-decoration: none;
+}
+.mice{
+  cursor: pointer;
+}
 /* NavBar */
 header img {
   margin-left: 70px ;
@@ -62,7 +68,6 @@ navbar-nav a {
   height: 450px;
 }       
 .image{
-
    width: 34rem; 
   height: 450px;
 }

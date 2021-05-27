@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-=======
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
->>>>>>> 9cd2afc77964acf2efbfbc2b0b66efbbb0dda000
+
 
 const routesApp: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
