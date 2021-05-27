@@ -130,6 +130,12 @@ h5 {
   position: relative;
   top:5px;
 }
+.details{
+  font-size: 12px;
+  text-align: justify;
+  margin-left: 2rem;
+  
+}
 
 /* about-us */
 #about h5{
@@ -172,6 +178,10 @@ footer img {
 @media (max-width: 330px) {
   .wedo {
     text-align: center;
+    
+  }
+  .wedo-ul li{
+    font-size: 5px;
   }
   ul {
     padding: 0;
@@ -179,6 +189,7 @@ footer img {
 }
 @media (max-width: 576px) {
   header img {
+    margin-left: 0 ;
     width: 70px;
     height: 70px;
   }
@@ -190,6 +201,9 @@ footer img {
     /* width: 100%; */
     padding-right: 15px;
     padding-left: 15px;
+  }
+  .wedo-ul li{
+    font-size: 14px;
   }
 }
 @media screen and (max-width:600px) {
