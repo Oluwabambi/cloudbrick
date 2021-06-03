@@ -7,6 +7,7 @@ import { LandingComponent } from './landing.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HeaderComponent } from './layouts/header/header.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HeaderComponent } from './layouts/header/header.component';
   
   imports: [
     CommonModule,
-    LandingRoutingModule
+    LandingRoutingModule,
+    FormsModule,
   ]
 })
 export class LandingModule { }
