@@ -1,5 +1,9 @@
 header, body{
   font-family: 'KoHo', sans-serif;
+  overflow: hidden;
+}
+.flow{
+  overflow: hidden;
 }
 .box-size{
   box-sizing: border-box;
@@ -148,31 +152,7 @@ h5 {
   margin-left: 30px;
 }
 
-/* footer */
-.foot {
-  background-color: #4285f4;
-  margin-right: 0px;
-  color: white;
-  padding-bottom: 30px;
-}
-footer img {
-  width: 90px;
-  height: 90px;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-.footr{
-  padding-top: 20px;
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
-}
-.footr h5 {
-  font-weight: bold;
-}
-.footr-p{
-  padding-left: 20px;
-  padding-top: 20px;
-}
+
 
 /* Media Queries */
 @media (max-width: 330px) {

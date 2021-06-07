@@ -8,6 +8,7 @@ import { ServicesComponent } from './services/services.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HeaderComponent } from './layouts/header/header.component';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './layouts/footer/footer.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     LandingComponent,
     ServicesComponent,
     ContactUsComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   
   imports: [

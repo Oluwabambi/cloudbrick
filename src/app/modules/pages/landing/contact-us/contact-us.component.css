@@ -1,7 +1,5 @@
 header, body{
-  /* padding-left: 10rem;
-  padding-right: 10rem;
-  padding-top: 3rem; */
+  
   font-family: 'KoHo', sans-serif;
 }
 .rows{
@@ -14,19 +12,7 @@ header, body{
 .mice{
   cursor: pointer;
 }
-/* NavBar */
-header img {
-  margin-left: 70px ;
-  width: 90px;
-  height: 90px;
-}
-navbar-nav a {
-  color:#8cc2fb; 
-  font-weight: bolder
-}
-.navbar-btn{
-  border-color: blue ;
-}
+
 /* Contacts */
 .container-head{
   margin-left: 120px;
@@ -70,8 +56,7 @@ navbar-nav a {
   justify-content: center;
   align-items: center;
   font-weight: bolder;
-  /* margin-top: 10px; */
-  /* margin-left: 100px; */
+
 }
 
 .visit {
@@ -111,35 +96,4 @@ left:100px;
   background-color: #4285f4;
   width: 150px;
   height: 2px;
-}
-/* @media (max-width:1200px){
-  .row{
-    flex-direction:column;
-  }
-} */
-
-/* footer */
-.foot {
-  background-color: #4285f4;
-  margin-right: 0px;
-  color: white;
-  padding-bottom: 30px;
-}
-footer img {
-  width: 90px;
-  height: 90px;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-.footr{
-  padding-top: 20px;
-  font-family: 'Quicksand', sans-serif;
-  text-align: center;
-}
-.footr h5 {
-  font-weight: bold;
-}
-.footr-p{
-  padding-left: 20px;
-  padding-top: 20px;
 }
