@@ -10,7 +10,7 @@
             <div class="col-sm-6 mt-3">
               <div class="contact">
                 <div class="card-body">
-                  <form #userForm="ngForm"  style= "max-width: 100%; height:330px;"(ngSubmit)="submitClient(userForm);userForm.reset()">
+                  <form #userForm="ngForm"  class= "form-container" (ngSubmit)="submitClient(userForm);userForm.reset()">
                     <div class="form-group">
                     <input  required type="text" #name="ngModel" 
                     class="form-control " placeholder="Name" aria-label="Name" name="name" [(ngModel)]="client.name" >

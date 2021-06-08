@@ -18,17 +18,6 @@ header, body{
 .mice{
   cursor: pointer;
 }
-/* NavBar */
-header img {
-  margin-left: 70px ;
-  max-width: 100%;
-  height: 90px;
-}
-navbar-nav a {
-
-  color:#8cc2fb; 
-  font-weight: bolder
-}
 
 /* First-section*/
 .typewriter{
@@ -72,7 +61,6 @@ navbar-nav a {
   height: 450px;
 }       
 .image{
-
    width: 34rem; 
   height: 450px;
 }

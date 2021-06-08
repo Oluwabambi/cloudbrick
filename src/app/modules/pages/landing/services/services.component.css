@@ -1,9 +1,10 @@
 header, body{
-  /* padding-left: 10rem;
-  padding-right: 10rem;
-  padding-top: 3rem; */
   font-family: 'KoHo', sans-serif;
 }
+*{
+  box-sizing:border-box;
+}
+
 .rows{
   margin-right: 15px;
   margin-left: 15px;
@@ -112,6 +113,8 @@ div h3 {
   width: 150px;
   height: 2px;
 }
+
+/* Media queries */
 @media screen and (max-width:600px) {
   header, body{
     padding-left: 0rem;
@@ -121,7 +124,9 @@ div h3 {
   .services{
     flex-direction: column;
   }
-
-  
-  
+}
+@media (max-width: 991px)  {
+  .describe-service{
+    margin-left: 18px;
+  }
 }

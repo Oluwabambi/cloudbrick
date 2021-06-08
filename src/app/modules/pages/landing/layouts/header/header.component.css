@@ -14,6 +14,7 @@ header, body{
   .mice{
     cursor: pointer;
   }
+ 
 /* NavBar */
 header img {
     margin-left: 70px ;
@@ -129,4 +130,5 @@ header img {
       }
       
     }
+    
     
