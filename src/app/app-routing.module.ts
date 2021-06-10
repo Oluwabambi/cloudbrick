@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './modules/pages/landing/home/home.component';
 
+
 const routesApp: Routes = [
-  // {path: '', redirectTo: '/home', pathMatch: 'full'},
   {
     path: '',
     pathMatch: 'full',
@@ -17,6 +18,7 @@ const routesApp: Routes = [
     path: '',
     loadChildren: () => import('./modules/pages/landing/landing.module').then(m => m.LandingModule)
   },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({

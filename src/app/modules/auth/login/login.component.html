@@ -1,1 +1,45 @@
-<h1 >login works!</h1>
+<!-- NavBar -->
+<header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand active" routerLink="/home">
+          <img src="./assets/cloudbrick.png">
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="login-container">
+      <div>
+          <h3 class="mb-5">Login to your site.</h3>
+      </div>
+      <div>
+          <!-- <form>
+            <div class="mb-3 pt-4 px-4">
+                <label for="formGroupExampleInput" class="form-label">Username</label>
+                <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Enter Username">
+              </div>
+              <div class="mb-3 pb-3 px-4">
+                <label for="formGroupExampleInput2" class="form-label">Password</label>
+                <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Enter password">
+              </div>
+              <button (click)="onLogin()" type="submit" class="btn form-button">Login</button>
+          </form>
+           -->
+
+           <form>
+            <div class="mb-3 pt-4 px-4">
+              <label for="formGroupExampleInput" class="form-label">Username</label>
+              <input type="email" class="form-control" name="userName" id="formGroupExampleInput" placeholder="Enter Username" [(ngModel)]="Login.userName">
+            </div>
+            <div class="mb-3 pb-3 px-4">
+              <label for="formGroupExampleInput2" class="form-label">Password</label>
+              <input type="password" class="form-control" name="pass" id="formGroupExampleInput2" placeholder="Enter password" [(ngModel)]="Login.pass">
+            </div>
+            <button type="submit" class="btn form-button" (click)="onLogin()">Login</button>
+        
+          </form>
+          
+      </div>
+
+  </div>

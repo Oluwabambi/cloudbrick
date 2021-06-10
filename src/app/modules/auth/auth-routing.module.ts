@@ -3,12 +3,16 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthComponent } from './auth.component';
 import {LoginComponent} from './login/login.component';
+import {AdminDashboardComponent} from './admin-dashboard/admin-dashboard.component';
 
 const routes: Routes = [{
   path: '',
   component: AuthComponent,
   children: [
     {path: 'login', component: LoginComponent},
+    {path: 'AdminDashboard', component: AdminDashboardComponent},
+
+
   ]
 }];
 

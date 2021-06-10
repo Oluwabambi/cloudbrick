@@ -6,6 +6,9 @@ import { HomeComponent } from './home/home.component';
 import { LandingComponent } from './landing.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { HeaderComponent } from './layouts/header/header.component';
+import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './layouts/footer/footer.component';
 
 
 @NgModule({
@@ -13,12 +16,15 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     HomeComponent,
     LandingComponent,
     ServicesComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   
   imports: [
     CommonModule,
-    LandingRoutingModule
+    LandingRoutingModule,
+    FormsModule,
   ]
 })
 export class LandingModule { }

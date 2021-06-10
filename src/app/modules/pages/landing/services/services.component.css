@@ -1,12 +1,19 @@
 header, body{
-  /* padding-left: 10rem;
-  padding-right: 10rem;
-  padding-top: 3rem; */
   font-family: 'KoHo', sans-serif;
 }
+*{
+  box-sizing:border-box;
+}
+
 .rows{
   margin-right: 15px;
   margin-left: 15px;
+}
+.navli{
+  text-decoration: none;
+}
+.mice{
+  cursor: pointer;
 }
 /* NavBar */
 header img {
@@ -36,10 +43,12 @@ navbar-nav a {
   margin-bottom: 25px;
   box-sizing: border-box;
   border-radius:10px;
+  transition: all .5s;
 }
 .services-list:hover {
+  color: white;
   width: 350px;
-  height: 90px;
+  height: 75px;
   background-color: #4285f4;
   box-sizing: border-box;
   border-radius:20px;
@@ -83,6 +92,9 @@ footer img {
   text-align: center;
   font-family: 'Quicksand', sans-serif;
 }
+.footr h5 {
+  font-weight: bold;
+}
 .footr-p{
   padding-left: 20px;
   padding-top: 20px;
@@ -97,10 +109,12 @@ div h3 {
 }
 .line {
   margin-top: 10px;
-  background-color: blue;
+  background-color: #4285f4;
   width: 150px;
   height: 2px;
 }
+
+/* Media queries */
 @media screen and (max-width:600px) {
   header, body{
     padding-left: 0rem;
@@ -110,7 +124,9 @@ div h3 {
   .services{
     flex-direction: column;
   }
-
-  
-  
+}
+@media (max-width: 991px)  {
+  .describe-service{
+    margin-left: 18px;
+  }
 }

@@ -1,0 +1,26 @@
+.co{
+    justify-content:center;
+    
+}
+.pad{
+padding-top : 15rem;
+}
+
+/* Media queries */
+
+@media (max-width: 767px){
+    h3,h5,button{
+        font-size: medium;
+    }
+}
+
+@media (max-width: 484px){
+    h3,h5, button{
+        font-size: small;
+    }
+}
+@media (max-width: 399px){
+    h3,h5{
+        text-align: center;
+    }
+}
