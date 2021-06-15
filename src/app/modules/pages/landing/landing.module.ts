@@ -7,7 +7,7 @@ import { LandingComponent } from './landing.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HeaderComponent } from './layouts/header/header.component';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './layouts/footer/footer.component';
 
 
@@ -24,7 +24,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
   imports: [
     CommonModule,
     LandingRoutingModule,
-    FormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class LandingModule { }
