@@ -2,7 +2,9 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 
-import {NgForm} from '@angular/forms'
+import {NgForm , Validators, FormBuilder} from '@angular/forms';
+import Swal from 'sweetalert2';
+
 
 @Component({
   selector: 'app-contact-us',
@@ -11,23 +13,12 @@ import {NgForm} from '@angular/forms'
 })
 export class ContactUsComponent implements OnInit {
 
-  // alert:boolean=false;
-
-  // myFunction() {
-  //   const x : any = document.getElementById("aler");
-  //   x.style.display = "block";
-  //   this.alert = true;
-  //     }
-
-      // closeAlert()
-      // {
-      //   this.alert=false;
-      // }
-
-  // for navbar collapse
+ 
   isShown = false;
+  projects : any =["Web Application", "Mobile Application", "Mobile Marketing", "Internet/Web Marketing"];
+  budgets : any =['$10,000-30,000', '$40,000-60,000', '$60,000-100,000'];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private fb : FormBuilder) {}
 
   ngOnInit(): void {}
 
@@ -35,27 +26,19 @@ export class ContactUsComponent implements OnInit {
     return this.router.navigate(['/home'],
      {state: {comingFrom: 'contact-us'}});
   }
-  client: Clients = {
-    name: '',
-    email: '',
-    projectType: "Project Type",
-    budget: 1,
-    message: '',
-  };
+ 
 
-  submitClient(clientForm:NgForm):void{
-     alert("Submitted");
+  userForm = this.fb.group({
+    name : ['', Validators.required],
+    email : ['', Validators.required],
+    projectType : ['', Validators.required],
+    budget : ['', Validators.required],
+    message : ['', Validators.required],
+  });
 
-    console.log(clientForm.value);
+  submitClient(){
+    Swal.fire('Submitted', '', 'success');
+    this.userForm.reset();
   }
 
-}
-
-
-export class Clients {
-  name?: string;
-  email?: string;
-  projectType?: string;
-  budget?: number;
-  message?: string;
 }

@@ -10,33 +10,23 @@
             <div class="col-sm-6 mt-3">
               <div class="contact">
                 <div class="card-body">
-                  <form #userForm="ngForm"  class= "form-container" (ngSubmit)="submitClient(userForm);userForm.reset()">
-                    <div class="form-group">
-                    <input  required type="text" #name="ngModel" 
-                    class="form-control " placeholder="Name" aria-label="Name" name="name" [(ngModel)]="client.name" >
-                      <small class="text-danger" [class.d-none]="name.valid || name.untouched">Name is required</small></div>
-                    <input type="email" class="form-control mt-2" placeholder="Email-Address" aria-label="Email-Address" name="email" [(ngModel)]="client.email" >
-                    <select class="form-select form-control mt-2" required aria-label="Default select example" name="projectType" [(ngModel)]="client.projectType"  >
-                        <option value="Project Type" disabled >Project Type</option>
-                        <option value="Web Application">Web Application</option>
-                        <option value="Mobile Application">Mobile Application</option>
-                        <option value="Mobile Marketing">Mobile Marketing</option>
-                        <option value="Internet/Web Marketing">Internet/Web Marketing</option>
-                    </select>
-                    <select class="form-select form-control mt-2" required aria-label="Default select example" name="budget" [(ngModel)]="client.budget" >
-                        <option value="1" disabled >Budget</option>
-                        <option value="$10,000-30,000">$10,000-30,000</option>
-                        <option value="$40,000-60,000">$40,000-60,000</option>
-                        <option value="$60,000-100,000">$60,000-100,000</option>
-                    </select>
-                    <input type="text" class="form-control mt-2" required placeholder="Send us a Message" style="height:60px;" aria-label="Message" name="message" [(ngModel)]="client.message" >
+                  <form [formGroup]= "userForm" >
+                    <input type="text" 
+                    class="form-control " placeholder="Name" aria-label="Name" formControlName="name" >
+                    <input type="email" class="form-control mt-2" placeholder="Email-Address" aria-label="Email-Address" formControlName="email"  >
+                    <select class="form-select form-control mt-2" required aria-label="Default select example" formControlName="projectType">
+                      <option value="" disabled>Project</option>
+                      <option *ngFor="let project of projects" [ngValue]="project">{{project}}</option>
+                   </select>
+                   <select class="form-select form-control mt-2" required aria-label="Default select example"  formControlName="budget">
+                    <option value="" disabled>Budget</option>
+                    <option *ngFor="let budget of budgets" [ngValue]="budget">{{budget}}</option>
+                 </select>
+                 <input type="text" class="form-control mt-2" required placeholder="Send us a Message" style="height:60px;" aria-label="Message" formControlName="message"  >
                   
-                  <button type="submit" [disabled]="userForm.invalid" class="btn form-button mt-2" >Submit</button>
-                  <!-- <div id="aler" class="alert alert-dismissible animate__animated animate__delay-3s animate__fadeOutUp">
-            <span class="closebtn" >&times;</span> 
-            Form submitted succesfully.
-    </div> -->
-                </form>
+                  <button type="submit"  class="btn  form-button mt-2" [disabled]="!userForm.valid" (click)="submitClient()"  >Submit</button>
+                      
+                  </form>
                 </div>
               </div>
             </div>
