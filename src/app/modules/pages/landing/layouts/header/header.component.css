@@ -16,6 +16,9 @@ header, body{
   }
  
 /* NavBar */
+header {
+  background-color: whitesmoke;
+}
 header img {
     margin-left: 70px ;
     max-width: 100%;
@@ -115,7 +118,6 @@ header img {
       header{
         padding-left: 0rem;
         padding-right: 0rem;
-        padding-top: 3rem;
       }
       body{
         padding-left: 3rem;

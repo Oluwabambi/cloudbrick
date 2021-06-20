@@ -93,6 +93,9 @@ left:100px;
   width: 150px;
   height: 2px;
 }
+a {
+  text-decoration: none;
+}
 
 /* Media queries */
 @media(max-width: 313px){

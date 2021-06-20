@@ -68,6 +68,9 @@ header, body{
    width: 34rem; 
   height: 450px;
 }
+.contain {
+  margin-left: 62px;
+}
 
 /* Features */
 .feature-container{
@@ -165,6 +168,9 @@ h5 {
     margin-left: 0 ;
     width: 70px;
     height: 70px;
+  }
+  .contain {
+    margin-left: 0px;
   }
   .idea{
     flex-direction: column;
