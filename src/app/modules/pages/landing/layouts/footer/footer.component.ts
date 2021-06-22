@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-footer',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+
+  email = '';
 
   constructor() { }
 
@@ -15,6 +19,10 @@ export class FooterComponent implements OnInit {
   showUp() {
     const element: any = document.querySelector('#about');
     element.scrollIntoView();
+  }
+
+  subNewsLetter() {
+    Swal.fire('Submitted', '', 'success');
   }
   
 }

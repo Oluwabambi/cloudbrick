@@ -10,6 +10,10 @@ import * as AOS from 'aos';
 export class AppComponent {
   title = 'Bambi';
   ngOnInit() {
-    AOS.init();
+    AOS.init(
+      {
+        once: true
+      }
+    );
   }
 }

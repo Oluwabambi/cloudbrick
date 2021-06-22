@@ -97,6 +97,7 @@ body{
   }
   .frm {
     border:none;
+    height: 46px;
   }
   .icons {
     font-size: 35px;
