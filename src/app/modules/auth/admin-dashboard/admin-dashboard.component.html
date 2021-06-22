@@ -1,32 +1,22 @@
 <table class="table">
-    <thead class="head-color">
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Email</th>
-        <th scope="col">Project-Type</th>
-        <th scope="col">Budget</th>
-        <th scope="col">Message</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr >
-        <th scope="row"></th>
-        <td>m</td>
-        <td>l</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-      </tr>
-     
-    </tbody>
-  </table>
-
+  <thead class="head-color">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Project-Type</th>
+      <th scope="col">Budget</th>
+      <th scope="col">Message</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of allUsers">
+      <th scope="row">{{user.id}}</th>
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.projectType}}</td>
+      <td>{{user.budget}}</td>
+      <td>{{user.message}}</td>
+    </tr>
+  </tbody>
+</table>

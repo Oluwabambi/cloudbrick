@@ -10,7 +10,7 @@
             <div class="col-sm-6 mt-3">
               <div class="contact">
                 <div class="card-body">
-                  <form [formGroup]= "userForm" >
+                  <form [formGroup]= "userForm" (ngSubmit)="submitClient(userForm.value)" >
                     <input type="text" 
                     class="form-control " placeholder="Name" aria-label="Name" formControlName="name" >
                     <input type="email" class="form-control mt-2" placeholder="Email-Address" aria-label="Email-Address" formControlName="email"  >
@@ -24,7 +24,7 @@
                  </select>
                  <input type="text" class="form-control mt-2" required placeholder="Send us a Message" style="height:60px;" aria-label="Message" formControlName="message"  >
                   
-                  <button type="submit"  class="btn  form-button mt-2" [disabled]="!userForm.valid" (click)="submitClient()"  >Submit</button>
+                  <button type="submit"  class="btn  form-button mt-2"   [disabled]="!userForm.valid"   >Submit</button>
                       
                   </form>
                 </div>
@@ -49,5 +49,5 @@
           </div>
     </div>
 
-    
+    [disabled]="!userForm.valid"
     <app-footer></app-footer>

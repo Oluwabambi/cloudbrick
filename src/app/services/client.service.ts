@@ -9,6 +9,7 @@ import { ApiHandlerService } from './api-handler.service';
 export class ClientService {
 
   private getClientsURL = env.API_URL.ClientService.clients;
+  private postClientsURL = env.API_URL.ClientService.clients;
   
   
   constructor(private readonly apiService: ApiHandlerService) { }
@@ -17,5 +18,13 @@ export class ClientService {
     console.log(this.getClientsURL);
     return this.apiService.get(`${this.getClientsURL}`);
   }
+  postClients(data: any) {
+    console.log(this.postClientsURL);
+    return this.apiService.post(`${this.postClientsURL}`, data);
+  }
 
 }
+function data(arg0: string, data: any) {
+  throw new Error('Function not implemented.');
+}
+
