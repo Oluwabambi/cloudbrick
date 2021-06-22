@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
-
+import { MyAdminService } from 'src/app/services/my-admin.service';
 
 @Component({
   selector: 'app-login',
@@ -9,14 +9,16 @@ import {Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  Login: ILogin =  new ILogin();
-  constructor(private router: Router) { }
+  
+
+  constructor(private router: Router , private service : MyAdminService) { }
 
   ngOnInit(): void {
   }
 
-  onLogin(){
-    if(this.Login.userName === 'admin' && this.Login.pass === 'Admina'){
+  onLogin(userName:string, pass:string){
+    const output = this.service.onLogin(userName , pass);
+    if(output === true){
       this.router.navigateByUrl('auth/AdminDashboard');
     }else {
       alert('Wrong Username or Password');
@@ -24,10 +26,4 @@ export class LoginComponent implements OnInit {
     }
   }
    
-}
-
-export class ILogin{
-  "userName": string;
-  "pass": string;
-
 }

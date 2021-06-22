@@ -11,7 +11,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end " [ngClass]="{ 'show': isShown }" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-  <!--          <a class="nav-link mice" style="padding-right:40px; font-weight: bolder;" aria-current="page" (click)="showUp()">ABOUT US</a>-->
+
             <a [routerLink]="['']"  fragment="about" (click)="showUp()" class="nav-link mice" style="padding-right:40px; font-weight: bolder; margin-right: 40px;" aria-current="page" >ABOUT US</a>
             <a class="nav-link" style="padding-right:40px; font-weight: bolder; margin-right: 40px;" routerLink="/services">SERVICES</a>
             <a class="nav-link" style="font-weight: bolder; margin-right: 95px;" routerLink="/contact-us">CONTACT US</a>

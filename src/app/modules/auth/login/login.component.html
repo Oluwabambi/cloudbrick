@@ -30,13 +30,13 @@
            <form>
             <div class="mb-3 pt-4 px-4">
               <label for="formGroupExampleInput" class="form-label">Username</label>
-              <input type="email" class="form-control" name="userName" id="formGroupExampleInput" placeholder="Enter Username" [(ngModel)]="Login.userName">
+              <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Enter Username" #u1>
             </div>
             <div class="mb-3 pb-3 px-4">
               <label for="formGroupExampleInput2" class="form-label">Password</label>
-              <input type="password" class="form-control" name="pass" id="formGroupExampleInput2" placeholder="Enter password" [(ngModel)]="Login.pass">
+              <input type="password" class="form-control"  id="formGroupExampleInput2" placeholder="Enter password" #p2>
             </div>
-            <button type="submit" class="btn form-button" (click)="onLogin()">Login</button>
+            <button type="submit" class="btn form-button" (click)="onLogin(u1.value , p2.value)">Login</button>
         
           </form>
           
