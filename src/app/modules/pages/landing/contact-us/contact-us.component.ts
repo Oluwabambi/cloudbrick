@@ -1,7 +1,7 @@
   
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
-import {NgForm , Validators, FormBuilder} from '@angular/forms';
+import {NgForm , Validators, FormGroup, FormBuilder} from '@angular/forms';
 import Swal from 'sweetalert2';
 import { ClientService } from 'src/app/services/client.service';
 import { HttpClient } from '@angular/common/http';
@@ -16,12 +16,16 @@ export class ContactUsComponent implements OnInit {
 
  
   isShown = false;
+  
   projects : any =["Web Application", "Mobile Application", "Mobile Marketing", "Internet/Web Marketing"];
   budgets : any =['$10,000-30,000', '$40,000-60,000', '$60,000-100,000'];
+  // PAT_EMAIL = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+[.][a-zA-Z]{2,4}$";
+  // isFormSubmitted = false;
 
   constructor(private router: Router,private http: HttpClient, private fb : FormBuilder, private client: ClientService) {}
 
   ngOnInit(): void {
+    userForm :FormGroup;
     
   }
 
@@ -33,16 +37,17 @@ export class ContactUsComponent implements OnInit {
 
   userForm = this.fb.group({
     name : ['', Validators.required],
-    email : ['', Validators.required],
+    email : ['', [Validators.required]],
     projectType : ['', Validators.required],
     budget : ['', Validators.required],
     message : ['', Validators.required],
   });
 
   submitClient(data: any){
+    
     console.log(data);
       this.client.postClients(data).subscribe(res => {
-        console.log("res", res);
+        console.log( res);
       }, err => {
         console.log(err);
       })
