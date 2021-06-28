@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ClientService } from 'src/app/services/client.service';
 
 @Component({
@@ -11,12 +12,22 @@ export class AdminDashboardComponent implements OnInit {
 
   
   allUsers:Array<any> = [];
-  // users = this.http.get('https://60be1bebc622c100177fcd2b.mockapi.io/clients/');
-  constructor(private http: HttpClient, private client: ClientService) { }
+  
+  constructor(private http: HttpClient, private client: ClientService, private router : Router) { }
 
   ngOnInit(): void {
-    this.getClients();
-    
+    if (localStorage.getItem('isLoggedIn') !== 'LoggedIn') {
+      this.router.navigateByUrl('auth/login')
+    } else {
+          this.getClients();
+
+    }    
+  }
+
+  onLogOut() {
+    localStorage.removeItem('isLoggedIn');
+    localStorage.clear();
+    return this.router.navigateByUrl('auth/login')
   }
 
   getClients() {

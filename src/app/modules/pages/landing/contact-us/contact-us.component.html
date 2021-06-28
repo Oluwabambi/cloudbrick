@@ -13,7 +13,7 @@
                   <form [formGroup]= "userForm" (ngSubmit)="submitClient(userForm.value)" >
                     <input type="text" 
                     class="form-control " placeholder="Name" aria-label="Name" formControlName="name" >
-                    <input type="email" class="form-control mt-2" placeholder="Email-Address" aria-label="Email-Address" formControlName="email"  >
+                    <input type="email" class="form-control mt-2"  placeholder="Email-Address" aria-label="Email-Address" formControlName="email" >
                     <select class="form-select form-control mt-2" required aria-label="Default select example" formControlName="projectType">
                       <option value="" disabled>Project</option>
                       <option *ngFor="let project of projects" [ngValue]="project">{{project}}</option>

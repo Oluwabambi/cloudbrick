@@ -7,7 +7,6 @@ import {HttpClientModule} from '@angular/common/http';
 import{BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AuthAGuard } from './guards/auth-a.guard';
 
 @NgModule({
   declarations: [
@@ -23,7 +22,7 @@ import { AuthAGuard } from './guards/auth-a.guard';
     BrowserAnimationsModule,
     ReactiveFormsModule,
   ],
-  providers: [AuthAGuard],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

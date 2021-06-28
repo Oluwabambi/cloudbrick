@@ -24,7 +24,5 @@ export class ClientService {
   }
 
 }
-function data(arg0: string, data: any) {
-  throw new Error('Function not implemented.');
-}
+
 
