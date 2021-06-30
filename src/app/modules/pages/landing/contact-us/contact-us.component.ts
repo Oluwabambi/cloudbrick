@@ -26,6 +26,8 @@ export class ContactUsComponent implements OnInit {
 
   ngOnInit(): void {
     userForm :FormGroup;
+
+    scrollTo(0,0);
     
   }
 

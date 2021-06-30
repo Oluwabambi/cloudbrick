@@ -13,6 +13,7 @@ export class ServicesComponent implements OnInit {
 
   constructor(private router: Router) { }
   ngOnInit(): void {
+    scrollTo(0,0)
   }
 //service-describe
 myText: string =`With us, you get a professionally
