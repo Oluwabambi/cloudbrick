@@ -9,6 +9,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HeaderComponent } from './layouts/header/header.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './layouts/footer/footer.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
     CommonModule,
     LandingRoutingModule,
     ReactiveFormsModule,
+    NgbModule,
   ]
 })
 export class LandingModule { }
