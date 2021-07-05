@@ -24,6 +24,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
     // if (history.state.comingFrom === 'contact-us') {
     //   // ... do your scroll to view.
 
+    scrollTo(0,0)
+
     this.route.fragment.subscribe(fragment => {
       this.fragment = fragment;
     });

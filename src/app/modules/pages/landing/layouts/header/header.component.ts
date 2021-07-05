@@ -12,6 +12,12 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    scrollTo(0,0)
+  }
+
+  toTop() {
+    const firstView: any = document.querySelector('#first');
+    firstView.scrollIntoView();
   }
 
   showUp() {

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
-import { NgForm } from '@angular/forms';
+import {NgForm , Validators, FormGroup, FormBuilder} from '@angular/forms';
 
 @Component({
   selector: 'app-footer',
@@ -11,10 +11,18 @@ export class FooterComponent implements OnInit {
 
   email = '';
 
-  constructor() { }
+  submitted: any;
+  contactInfo: any;
+
+  constructor(private fb : FormBuilder) { }
 
   ngOnInit(): void {
+    userForm :FormGroup;
   }
+
+  userForm = this.fb.group({
+    email : ['', [Validators.required, Validators.email]]
+  })
 
   showUp() {
     const element: any = document.querySelector('#about');
@@ -22,7 +30,13 @@ export class FooterComponent implements OnInit {
   }
 
   subNewsLetter() {
-    Swal.fire('Submitted', '', 'success');
+    this.submitted = true;
+    this.contactInfo = this.userForm.value;
+    if(this.userForm.valid){
+      console.log(this.contactInfo)
+      this.submitted=false;
+}
+    this.userForm.reset();
   }
   
 }
