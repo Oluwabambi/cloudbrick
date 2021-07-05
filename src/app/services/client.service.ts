@@ -10,7 +10,7 @@ export class ClientService {
 
   private getClientsURL = env.API_URL.ClientService.clients;
   private postClientsURL = env.API_URL.ClientService.clients;
-  
+  private deleteClientsURL = env.API_URL.ClientService.clients;
   
   constructor(private readonly apiService: ApiHandlerService) { }
 
@@ -21,6 +21,10 @@ export class ClientService {
   postClients(data: any) {
     console.log(this.postClientsURL);
     return this.apiService.post(`${this.postClientsURL}`, data);
+  }
+  deleteClients(){
+    console.log(this.deleteClientsURL);
+    return this.apiService.delete(`${this.deleteClientsURL}` );
   }
 
 }

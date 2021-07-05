@@ -7,7 +7,7 @@ import {HttpClientModule} from '@angular/common/http';
 import{BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +22,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

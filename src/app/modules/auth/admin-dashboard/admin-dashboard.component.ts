@@ -21,7 +21,8 @@ export class AdminDashboardComponent implements OnInit {
     } else {
           this.getClients();
 
-    }    
+    }   
+    this.deleteClients(); 
   }
 
   onLogOut() {
@@ -39,5 +40,9 @@ export class AdminDashboardComponent implements OnInit {
 
     })
   }
+  deleteClients(){
+    if(confirm("Are you sure you want to delete")){ 
+    
+  }
 
-}
+}}

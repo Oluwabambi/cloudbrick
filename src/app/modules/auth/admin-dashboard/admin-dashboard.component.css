@@ -26,3 +26,7 @@ header img {
     background-color:#4285f4;
     color:white;
    }
+.delete{
+   width: 45px;
+   cursor:pointer;
+}
