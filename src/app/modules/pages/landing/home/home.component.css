@@ -68,8 +68,14 @@ header, body{
    width: 34rem; 
   height: 450px;
 }
+.ngba{
+  color: black;
+
+}
+
 .contain {
   margin-left: 62px;
+  max-width: 100%;
 }
 
 /* Features */
@@ -194,14 +200,7 @@ h5 {
   .typewriter{
     box-sizing: border-box;
   }
-  @keyframes typing{
-    from{
-      width:0%;
-    }
-    to{
-      width:100%;
-    }
-  }
+
   .container img{
     /* width:28rem; */
     max-width: 100%;
@@ -209,6 +208,10 @@ h5 {
   }
 }
 @media (max-width: 790px) {
+  .typewriter{
+    font-size: xx-large;
+  }
+
    .col-sm-five{
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;

@@ -25,6 +25,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
     CommonModule,
     LandingRoutingModule,
     ReactiveFormsModule,
+    
   ]
 })
 export class LandingModule { }

@@ -27,7 +27,7 @@
         <form [formGroup]= "userForm" (ngSubmit)="subNewsLetter()" class="input-group mt-4 mb-5">
           <input type="email" class="form-control frm" formControlName="email" required placeholder="Enter email address" aria-label="Recipient's username" aria-describedby="button-addon2">
           <span>
-            <a routerLink="" (click)="subNewsLetter()"><i class="material-icons icons" onmouseover="this.style.color='#4285f4'"
+            <a href="" (click)="subNewsLetter()"><i class="material-icons icons" onmouseover="this.style.color='#4285f4'"
           onmouseout="this.style.color='black'">mail</i></a>
           </span>
           <div class="text-danger false-email" *ngIf="userForm.invalid && submitted">Email is not in valid format</div>
