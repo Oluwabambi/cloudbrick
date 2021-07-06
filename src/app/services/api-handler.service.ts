@@ -41,7 +41,7 @@ export class ApiHandlerService {
 
   public delete(path: string): Observable<any> {
     path = `${this.baseUrl}/${path}`;
-    return this.httpClient.delete(path, {headers: this.header()});
+    return this.httpClient.delete(path,  {headers: this.header()});
   }
 
 }
