@@ -67,9 +67,6 @@ border: 2px solid #4285f4;
 border-radius: 20px;
 display: flex;
 align-items: center;
-/* position:absolute;
-top:5px;
-left:200px; */
 }
 .visit-us p{
   padding-left: 10px;
@@ -130,5 +127,18 @@ div h3 {
 @media (max-width: 991px)  {
   .describe-service{
     margin-left: 18px;
+  }
+}
+@media (min-width: 1370px){
+  .contain{
+    margin-left: 75px;
+  }
+  .describe-service{
+    margin-left: 100px;
+    width:750px;
+    
+  }
+  .services-list{
+    width:450px; 
   }
 }

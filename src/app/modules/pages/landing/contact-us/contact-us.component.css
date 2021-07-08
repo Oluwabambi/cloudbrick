@@ -41,7 +41,6 @@ header, body{
   width:17rem;
   
 }
-
 .form-button{
   border-style: none;
   border-radius: 200px;
@@ -54,7 +53,6 @@ header, body{
   font-weight: bolder;
 
 }
-
 .visit {
   margin:auto;
   max-width: 350px;
@@ -62,29 +60,6 @@ header, body{
 }
 .visit p {
   font-family: 'Quicksand', sans-serif;
-}
-.visit-us-container{
-  width:50%;
-  height:500px;
-  box-sizing: border-box;
-  position: relative;
-
-}
-.visit-us{
-background-color: rgb(241 238 238);
-width:300px;
-height:300px;
-position:absolute;
-top:5px;
-left:100px;
-}
-.visit-us h6 {
-  margin-top: 5px;
-  margin-left: 5px;
-}
-.visit-us p{
-  padding-left: 10px;
-  color:blue;
 }
 .line {
   margin-top: 10px;
@@ -107,6 +82,14 @@ a {
 @media(min-width: 478px)  and (max-width: 575px) {
   .contact{
     margin-left: 40px;
+  }
+}
+@media (min-width: 1400px){
+  .contain{
+    margin-left: 100px;
+  }
+  .visit{
+    margin-left: 200px;
   }
 }
 

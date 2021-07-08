@@ -4,7 +4,7 @@
         <a (click)="toTop()" class="navbar-brand active" routerLink="">
           <img src="./assets/cloudbrick.jpg">
         </a>
-        <button (click)="isShown=!isShown"  class="navbar-toggler navbar-btn " type="button" data-bs-toggle="collapse"
+        <button (click)="isShown=!isShown "  class="navbar-toggler navbar-btn " type="button" data-bs-toggle="collapse"
                 href="#navbarNavAltMarkup" data-bs-targetg="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
                 aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -12,9 +12,9 @@
         <div class="collapse navbar-collapse justify-content-end " [ngClass]="{ 'show': isShown }" id="navbarNavAltMarkup">
           <div class="navbar-nav">
 
-            <a [routerLink]="['']"  fragment="about" (click)="showUp()" class="nav-link mice" style="padding-right:40px; font-weight: bolder; margin-right: 40px;" aria-current="page" >ABOUT US</a>
-            <a class="nav-link" style="padding-right:40px; font-weight: bolder; margin-right: 40px;" routerLink="/services">SERVICES</a>
-            <a class="nav-link" style="font-weight: bolder; margin-right: 95px;" routerLink="/contact-us">CONTACT US</a>
+            <a [routerLink]="['']"  fragment="about" (click)="showUp()" class="nav-link mice endnav"  aria-current="page" >ABOUT US</a>
+            <a class="nav-link endnav"  routerLink="/services">SERVICES</a>
+            <a class="nav-link endnav-contact"  routerLink="/contact-us">CONTACT US</a>
   
           </div>
         </div>

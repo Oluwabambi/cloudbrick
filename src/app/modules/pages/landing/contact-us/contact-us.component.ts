@@ -1,7 +1,7 @@
   
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
-import {NgForm , Validators, FormGroup, FormBuilder} from '@angular/forms';
+import {NgForm , Validators, FormGroup, FormBuilder, FormControl} from '@angular/forms';
 import Swal from 'sweetalert2';
 import { ClientService } from 'src/app/services/client.service';
 import { HttpClient } from '@angular/common/http';
@@ -38,11 +38,11 @@ export class ContactUsComponent implements OnInit {
  
 
   userForm = this.fb.group({
-    name : ['', Validators.required],
-    email : ['', [Validators.required]],
-    projectType : ['', Validators.required],
-    budget : ['', Validators.required],
-    message : ['', Validators.required],
+    name : new FormControl ('', Validators.required),
+    email : new FormControl ('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
+    projectType : new FormControl ('', Validators.required),
+    budget : new FormControl ('', Validators.required),
+    message : new FormControl ('', Validators.required),
   });
 
   submitClient(data: any){
@@ -57,6 +57,7 @@ export class ContactUsComponent implements OnInit {
     this.userForm.reset();
     
   }
+
 
   
 

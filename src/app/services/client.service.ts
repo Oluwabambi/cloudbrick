@@ -17,14 +17,14 @@ export class ClientService {
   getClients() {
     console.log(this.getClientsURL);
     return this.apiService.get(`${this.getClientsURL}`);
-  }
+  } 
   postClients(data: any) {
     console.log(this.postClientsURL);
     return this.apiService.post(`${this.postClientsURL}`, data);
   }
   deleteClients(){
     console.log(this.deleteClientsURL);
-    return this.apiService.delete(`${this.deleteClientsURL}` );
+    return this.apiService.delete(`${this.deleteClientsURL}`);
   }
 
 }
