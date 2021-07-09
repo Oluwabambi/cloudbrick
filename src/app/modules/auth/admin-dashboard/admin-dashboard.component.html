@@ -29,7 +29,7 @@
       <td>{{user.projectType}}</td>
       <td>{{user.budget}}</td>
       <td>{{user.message}}</td>
-      <td><img src="assets/delete.png" class="delete"></td>
+      <td><img src="assets/delete.png" (click)="deleteClients(user.id)" class="delete"></td>
     </tr>
   </tbody>
 </table>

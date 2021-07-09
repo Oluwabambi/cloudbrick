@@ -22,9 +22,9 @@ export class ClientService {
     console.log(this.postClientsURL);
     return this.apiService.post(`${this.postClientsURL}`, data);
   }
-  deleteClients(){
+  deleteClients(id:number){
     console.log(this.deleteClientsURL);
-    return this.apiService.delete(`${this.deleteClientsURL}`);
+    return this.apiService.delete(`${this.deleteClientsURL}` +"/"+ id);
   }
 
 }
