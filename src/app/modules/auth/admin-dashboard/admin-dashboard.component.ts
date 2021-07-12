@@ -32,17 +32,18 @@ export class AdminDashboardComponent implements OnInit {
   }
 
   getClients() {
-    this.client.getClients().subscribe(res => {
-      console.log(res);
+    this.client.getClients().subscribe(res => {    
       this.allUsers = res;
     }, err => {
       console.log(err);
 
     })
   }
+ deleteClients(id:any) {
+   if(confirm("Are you sure you want to delete?")){
+    this.client.deleteClients(id).subscribe(res => {
+      this.getClients();
+    })}
 
-    
-  
-
-
+  }
 }
