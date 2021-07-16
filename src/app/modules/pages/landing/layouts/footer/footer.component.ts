@@ -21,7 +21,7 @@ export class FooterComponent implements OnInit {
   }
 
   userForm = this.fb.group({
-    email : ['', [Validators.required, Validators.email]]
+    email : ['', [Validators.required, Validators.email, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]]
   })
 
   showUp() {
@@ -29,14 +29,21 @@ export class FooterComponent implements OnInit {
     element.scrollIntoView();
   }
 
-  subNewsLetter() {
+ subNewsLetter() {
+    const x: any = document.getElementById('emailFalse');
     this.submitted = true;
     this.contactInfo = this.userForm.value;
-    if(this.userForm.valid){
-      console.log(this.contactInfo)
-      this.submitted=false;
-}
-    this.userForm.reset();
+    console.log(this.userForm.invalid);
+    if(this.userForm.valid) {
+      Swal.fire('Submitted', '', 'success');
+      this.submitted = false;
+      x.innerHTML = "Thanks for subscribing!";
+      x.style.color = "#77eb34";
+      setTimeout(() => { 
+        x.innerHTML = "";
+        this.submitted = false;
+      }, 5000);
+    }  
   }
   
 }

@@ -99,6 +99,10 @@ body{
     border:none;
     height: 46px;
   }
+  .subnews {
+    background-color: white;
+    border: 0;
+  }
   .icons {
     font-size: 35px;
     color: black;
@@ -106,7 +110,7 @@ body{
   }
   .false-email {
     position: absolute;
-    top: 44px;
+    top: 48px;
     left: 10px;
     font-weight: bolder;
   }

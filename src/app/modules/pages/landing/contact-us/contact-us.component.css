@@ -14,12 +14,13 @@ header, body{
 
 /* Contacts */
 .container-head{
-  margin-left: 120px;
+  margin-left: 101px;
     padding-top:20px;
     padding-bottom:20px;
     
   }
 .contact {
+  margin-left: -22px;
   max-width: 400px;
   background-color: #4285f4;
   font-family: 'Quicksand', sans-serif;
@@ -63,7 +64,7 @@ header, body{
 }
 .line {
   margin-top: 10px;
-  margin-left: 120px;
+  margin-left: 101px;
   background-color: #4285f4;
   width: 150px;
   height: 2px;
