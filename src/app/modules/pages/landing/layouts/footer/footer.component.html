@@ -1,17 +1,17 @@
 <footer id="foot" class="foot flow">
     <div class="row footr rows">
-      <div class="col" data-aos="fade-left" data-aos-delay="600" data-aos-duration="800" data-aos-once="true">
+      <div class="col" data-aos="fade-right" data-aos-delay="700" data-aos-duration="800" data-aos-once="true">
         <img src="./assets/cloudfoot.jpg" alt="CB">
         <p class="footr-p">Nigeria's leading tech solutions company</p>
         <p class="copyright">Copyright © CloudBrick 2021</p>
       </div>
-      <div class="col" data-aos="fade-left" data-aos-delay="1200" data-aos-duration="800" data-aos-once="true">
+      <div class="col" data-aos="fade-right" data-aos-delay="700" data-aos-duration="800" data-aos-once="true">
         <h5>Company</h5>
         <a class="navli" routerLink="/services"><p style="color:white;">Services</p></a>
         <a [routerLink]="['']" fragment="about" (click)="showUp()" class="navli mice"><p style="color:white;">About Us</p></a>
         <a  class="navli" routerLink="/contact-us"><p style="color:white;">Contact</p></a>
       </div>
-      <div class="col" data-aos="fade-left" data-aos-delay="1800" data-aos-duration="800" data-aos-once="true">
+      <div class="col" data-aos="fade-left" data-aos-delay="700" data-aos-duration="800" data-aos-once="true">
         <h5>Contact Us</h5>
         <a  href="tel:+2348146233440" target="_blank" ><p style="color:white;">+2348146233440</p></a>
         <a href="mailto:info@upperlink.ng" target="_blank" ><p style="color:white;">info@cloudbrick.com</p></a>
@@ -22,7 +22,7 @@
           <a target="_blank" href="https://www.linkedin.com/company/cloudbrick-limited" class="fa fa-linkedin"></a>
         </div>
       </div>
-      <div class="col news" data-aos="fade-left" data-aos-delay="2400" data-aos-duration="800" data-aos-once="true">
+      <div class="col news" data-aos="fade-left" data-aos-delay="700" data-aos-duration="800" data-aos-once="true">
         <h5>Subscribe to our newsletter</h5>
         <form [formGroup]= "userForm" (ngSubmit)="subNewsLetter()" class="input-group mt-4 mb-5">
           <input type="email" class="form-control frm" formControlName="email" required placeholder="Enter email address" aria-label="Recipient's username" aria-describedby="button-addon2">
@@ -31,7 +31,7 @@
           onmouseout="this.style.color='black'">mail</i></button>
           </span>
           <div id="emailFalse" class="false-email"></div>
-          <div id="emailTrue" class="text-danger false-email" *ngIf="userForm.invalid && submitted">Email is not valid</div>
+          <div id="emailTrue" class="error-text false-email" *ngIf="userForm.invalid && submitted">Email is not valid</div>
           
         </form>
         <p>By entering your email, you agree to our Terms of Service and Privacy Policy.</p>

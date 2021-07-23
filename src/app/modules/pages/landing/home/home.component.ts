@@ -13,7 +13,7 @@ import {ActivatedRoute} from '@angular/router';
 
 export class HomeComponent implements OnInit, AfterViewInit {
 
-  private fragment: string | undefined;
+  private fragment: string | undefined | null;
   showContent: boolean[] = [false, false, false, false];
 
   constructor(private route: ActivatedRoute) {

@@ -108,6 +108,11 @@ body{
     color: black;
     margin-top: 5px;
   }
+  .error-text {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 0.01rem;
+    -webkit-text-stroke-color: red;
+  }
   .false-email {
     position: absolute;
     top: 48px;
