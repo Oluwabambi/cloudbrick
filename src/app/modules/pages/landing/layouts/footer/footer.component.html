@@ -24,14 +24,14 @@
       </div>
       <div class="col news" data-aos="fade-left" data-aos-delay="700" data-aos-duration="800" data-aos-once="true">
         <h5>Subscribe to our newsletter</h5>
-        <form [formGroup]= "userForm" (ngSubmit)="subNewsLetter()" class="input-group mt-4 mb-5">
+        <form [formGroup]= "emailForm"  class="input-group mt-4 mb-5">
           <input type="email" class="form-control frm" formControlName="email" required placeholder="Enter email address" aria-label="Recipient's username" aria-describedby="button-addon2">
           <span>
-            <button class="subnews" (click)="subNewsLetter()"><i class="material-icons icons" onmouseover="this.style.color='#4285f4'"
+            <button class="subnews" (click)="subNewsLetter(emailForm.value)"><i class="material-icons icons" onmouseover="this.style.color='#4285f4'"
           onmouseout="this.style.color='black'">mail</i></button>
           </span>
           <div id="emailFalse" class="false-email"></div>
-          <div id="emailTrue" class="error-text false-email" *ngIf="userForm.invalid && submitted">Email is not valid</div>
+          <div id="emailTrue" class="error-text false-email" *ngIf="emailForm.invalid && submitted">Email is not valid</div>
           
         </form>
         <p>By entering your email, you agree to our Terms of Service and Privacy Policy.</p>

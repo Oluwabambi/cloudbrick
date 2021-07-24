@@ -10,6 +10,9 @@ export const environment = {
     ClientService: {
       clients: 'clients',
     },
+    ClientEmailService:{
+      clientEmail: 'clientEmails',
+    }
     
 }
 };
