@@ -4,6 +4,7 @@ import {ActivatedRoute} from '@angular/router';
 
 
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -12,7 +13,7 @@ import {ActivatedRoute} from '@angular/router';
 
 export class HomeComponent implements OnInit, AfterViewInit {
 
-  private fragment: string | undefined;
+  private fragment: string | undefined | null;
   showContent: boolean[] = [false, false, false, false];
 
   constructor(private route: ActivatedRoute) {
@@ -23,6 +24,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
     // console.log(history); // This should show you contact-us
     // if (history.state.comingFrom === 'contact-us') {
     //   // ... do your scroll to view.
+
+    scrollTo(0,0)
 
     this.route.fragment.subscribe(fragment => {
       this.fragment = fragment;
